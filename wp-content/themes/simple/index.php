@@ -24,7 +24,7 @@
       <header class="PageHeader" id="page-header" role="banner">
         <div class="inner">
           <h1 class="HeaderPageId">
-            <a href="https://web-compass.blog">webコンパス</a>
+            <a href="/">webコンパス</a>
           </h1>
           <p>国内シェアNo1サービスの「中の人」がブログ運営に役立つ情報をわかりやすくお届け！</p>
           <nav class="HeaderGlobalNav" id="global-nav" role="navigation" aria-label="メインメニュー">
@@ -43,6 +43,57 @@
         </div>
       <!-- /.PageHeader -->
       </header>
+
+      <div class="PageContent" id="page-content">
+        <div class="inner">
+          <main class="MainContent" id="main-content" role="main">
+
+          </main>
+        </div>
+      </div>
+
+      <footer class="PageFooter" id="page-footer" role="contentinfo">
+        <div class="inner">
+          <div class="FooterInformation">
+            <p class="FooterInformation__name">
+              <a href="/">webコンパス</a>
+            </p>
+            <p class="FooterInformation__message">現役WebエンジニアによるWeb制作者・プログラマーのための独学サイト</p>
+          </div>
+          <div class="FooterBottom">
+            <div class="FooterBottom__description">
+              <h4>webコンパスについて</h4>
+              <p>webコンパスは〇〇の解説をしています。<br>
+              現役コーダーによるWebサイト制作の解説をしています。</p>
+            </div>
+            <div class="FooterBottom__category">
+              <h4>Category</h4>
+              <ul class="FooterBottom__categoryList">
+                <li>WordPress</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="FooterBottom__contact">
+              <h4>Contact</h4>
+              <div class="FooterBottom__contactButton">
+                <a href="/profile/" class="Button">運営者情報はこちら</a>
+              </div>
+              <div class="FooterBottom__contactButton">
+                <a href="/contact/" class="Button">ご相談・お問い合わせはこちら</a>
+              </div>
+            </div>
+          <!-- /.FooterBottom -->
+          </div>
+          <p class="FooterCopyright">
+            <small>© 2023<a href="/">webコンパス</a></small>
+          </p>
+        </div>
+      <!-- /.PageFooter -->
+      </footer>
+    <!-- /.PageContainer -->
     </div>
+  <!-- /.Page -->
   </body>
 </html>
