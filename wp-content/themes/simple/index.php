@@ -47,7 +47,19 @@
       <div class="PageContent" id="page-content">
         <div class="inner">
           <main class="MainContent" id="main-content" role="main">
-
+            <article class="_PickupPost" id="pickup-post">
+              <a href="/how-to-start-programming/">
+                <figure class="_PickupPost__thumbnail">
+                  <img src="" alt="" width="" height="" decoding="async">
+                </figure>
+                <div class="_PickupPost__text">
+                  <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
+                  <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
+                  <p class="_PickupPost__button"><span>この記事を読む</span></p>
+                </div>
+              </a>
+            <!-- /._PickupPost -->
+            </article>
           </main>
         </div>
       </div>
