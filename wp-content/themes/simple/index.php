@@ -60,6 +60,39 @@
               </a>
             <!-- /._PickupPost -->
             </article>
+
+            <section class="_ArticlePart _Popular" id="popular">
+              <h2 class="_ArticlePart__title">人気記事</h2>
+              <article class="_ArticleItem">
+                <a href="/">
+                  <figure class="_ArticleItem__thumbnail">
+                    <img src="" alt="" width="" height="" decoding="async">
+                  </figure>
+                  <div class="_ArticleItem__text">
+                    <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
+                    <p class="_ArticleItem__description">クリプト運用（DeFi）の生放送セミナーを実施します。僕は「約２億円」を仮想通貨の「DeFi」で運用しており、利回りは「6.7%」くらいです。セミナーでは「DeFiのメリット＆デメリット、リスク回避の方法、実際の使い方」を解説します。</p>
+                  </div>
+                </a>
+              <!-- /._ArticleItem TODO:このパーツを以下に2回繰り返す -->
+              </article>
+            <!-- /._ArticlePart -->
+            </section>
+            <section class="_ArticlePart _New" id="new">
+              <h2 class="_ArticlePart__title">新着記事</h2>
+              <article class="_ArticleItem">
+                <a href="/">
+                  <figure class="_ArticleItem__thumbnail">
+                    <img src="" alt="" width="" height="" decoding="async">
+                  </figure>
+                  <div class="_ArticleItem__text">
+                    <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
+                    <p class="_ArticleItem__description">クリプト運用（DeFi）の生放送セミナーを実施します。僕は「約２億円」を仮想通貨の「DeFi」で運用しており、利回りは「6.7%」くらいです。セミナーでは「DeFiのメリット＆デメリット、リスク回避の方法、実際の使い方」を解説します。</p>
+                  </div>
+                </a>
+              <!-- /._ArticleItem TODO:このパーツを以下に9回繰り返す -->
+              </article>
+            <!-- /._ArticlePart -->
+            </section>
           </main>
         </div>
       </div>
