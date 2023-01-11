@@ -27,7 +27,7 @@
             <a href="/">webコンパス</a>
           </h1>
           <p>国内シェアNo1サービスの「中の人」がブログ運営に役立つ情報をわかりやすくお届け！</p>
-          <nav class="HeaderGlobalNav" id="global-nav" role="navigation" aria-label="メインメニュー">
+          <nav class="HeaderGlobalNav" id="global-nav" aria-label="メインメニュー">
             <div class="HeaderGlobalNav__contents">
               <ul class="HeaderGlobalNav__list">
                 <li><a href="/category/wordpress/"><i class="fa-brands fa-wordpress"></i> WordPress</a></li>
@@ -93,6 +93,16 @@
               </article>
             <!-- /._ArticlePart -->
             </section>
+            <nav class="Pagination" role="navigation" aria-label="ページネーション">
+              <ul class="Pagination__numbers">
+                <li class="-page"><span>1</span></li>
+                <li class="-page"><a href="/page/2/">2</a></li>
+                <li class="-dots"><span>…</span></li>
+                <li class="-page"><a href="/page/10/">10</a></li>
+                <li class="-next"><a href="/page/2/"></a></li>
+              </ul>
+            <!-- /.Pagination -->
+            </nav>
           </main>
         </div>
       </div>
