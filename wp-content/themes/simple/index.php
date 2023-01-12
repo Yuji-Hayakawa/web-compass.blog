@@ -113,6 +113,17 @@
               </form>
             <!-- /.Search -->
             </div>
+            <div class="_Menu" id="menu">
+              <ul class="_Menu__list">
+                <li><a href="/beginner/"><i class="fa-regular fa-star-half-stroke"></i>初心者向け</a></li>
+                <li><a href="/intermediate/"><i class="fa-solid fa-graduation-cap"></i>中級者向け</a></li>
+                <li><a href="/html/"><i class="fa-solid fa-code"></i>HTML</a></li>
+                <li><a href="/css/"><i class="fa-solid fa-brackets-curly"></i>CSS</a></li>
+                <li><a href="/wordpress/"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
+                <li><a href="/books/"><i class="fa-light fa-book-open"></i>おすすめ本</a></li>
+              </ul>
+            <!-- /._Menu -->
+            </div>
           <!-- /.Sidebar -->
           </aside>
         </div>
