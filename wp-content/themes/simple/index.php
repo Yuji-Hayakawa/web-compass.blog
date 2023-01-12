@@ -30,7 +30,7 @@
           <nav class="HeaderGlobalNav" id="global-nav" aria-label="メインメニュー">
             <div class="HeaderGlobalNav__contents">
               <ul class="HeaderGlobalNav__list">
-                <li><a href="/category/wordpress/"><i class="fa-brands fa-wordpress"></i> WordPress</a></li>
+                <li><a href="/category/wordpress/"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
                 <li><a href="/category/html/"><i class="fa-solid fa-code"></i>HTML</a></li>
                 <li><a href="/category/css/"><i class="fa-solid fa-brackets-curly"></i>CSS</a></li>
                 <li><a href="/category/javascript/"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
@@ -103,7 +103,18 @@
               </ul>
             <!-- /.Pagination -->
             </nav>
+          <!-- /.MainContent -->
           </main>
+          <aside class="Sidebar" id="sidebar" role="complementary">
+            <div class="Search" id="search">
+              <form action="https://web-compass.blog/" class="SearchForm" method="get" role="search">
+                <input type="text" name="s" value="" placeholder="検索" class="SearchForm__input">
+                <button type="submit" class="SearchForm__submit" aria-label="検索する"></button>
+              </form>
+            <!-- /.Search -->
+            </div>
+          <!-- /.Sidebar -->
+          </aside>
         </div>
       </div>
 
