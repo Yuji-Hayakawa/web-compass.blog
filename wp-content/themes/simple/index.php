@@ -135,6 +135,19 @@
               <a href="/profile/" rel="author">プロフィール詳細</a>
             <!-- /.Profile -->
             </section>
+            <section class="Category" id="category">
+              <h4 class="Category__title">Category</h4>
+              <ul class="Category__list">
+                <li><a href="/category/wordpress/">WordPress</a></li>
+                <li><a href="/category/html/">HTML</a></li>
+                <li><a href="/category/css/">CSS</a></li>
+                <li><a href="/category/javascript/">JavaScript</a></li>
+                <li><a href="/category/work/">Work</a></li>
+                <li><a href="/category/books/">Books</a></li>
+                <!-- TODO: 以下liタグ繰り返し -->
+              </ul>
+            <!-- /.Category -->
+            </section>
           <!-- /.Sidebar -->
           </aside>
         </div>
