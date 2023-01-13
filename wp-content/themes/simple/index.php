@@ -124,17 +124,17 @@
               </ul>
             <!-- /._Menu -->
             </div>
-            <div class="Profile" id="profile">
+            <section class="Profile" id="profile">
               <figure class="Profile__authorImg">
                 <img src="" alt="はや氏の似顔絵" width="" height="" decoding="async">
               </figure>
-              <h4 class="Profile__name">はや氏</h4>
+              <h4 class="Profile__author">はや氏</h4>
               <p class="Profile__job">Webエンジニア</p>
               <p class="Profile__text">WordPressが得意なWeb屋。HPcode代表。300件以上のWordPress案件を対応してきました。SE → 農家 → アフィリエイター → Web屋。生まれは三重県。<br>
               ホームページ制作を承っております。お気軽にお問い合わせください！</p>
               <a href="/profile/" rel="author">プロフィール詳細</a>
             <!-- /.Profile -->
-            </div>
+            </section>
           <!-- /.Sidebar -->
           </aside>
         </div>
