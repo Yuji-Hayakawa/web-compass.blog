@@ -148,6 +148,16 @@
               </ul>
             <!-- /.Category -->
             </section>
+            <section class="Archive" id="archive">
+              <h4 class="Archive__title">Archive</h4>
+              <ul class="Archive__list">
+                <li><a href="/2023/01/">2023年1月</a></li>
+                <li><a href="/2022/12/">2022年12月</a></li>
+                <li><a href="/2022/11/">2022年11月</a></li>
+                <!-- TODO: 以下liタグ繰り返し -->
+              </ul>
+            <!-- /.Archive -->
+            </section>
           <!-- /.Sidebar -->
           </aside>
         </div>
