@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>webコンパス</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ページの紹介文">
     <meta name="format-detection" content="telephone=no, email=no, address=no">
-    <meta property="og:url" content="https://web-compass.blog">
+    <meta property="og:url" content="https://web-compass.blog/">
     <meta property="og:title" content="ページのタイトル">
     <meta property="og:description" content="">
     <meta property="og:image" content="ページのサムネ画像">
@@ -21,7 +20,7 @@
   </head>
   <body class="Page">
     <div class="PageContainer" id="page-container">
-      <header class="PageHeader" id="page-header" role="banner">
+      <header class="PageHeader" id="page-header">
         <div class="inner">
           <h1 class="HeaderPageId">
             <a href="/">webコンパス</a>
@@ -46,13 +45,13 @@
 
       <div class="PageContent" id="page-content">
         <div class="inner">
-          <main class="MainContent" id="main-content" role="main">
+          <main class="MainContent" id="main-content">
             <article class="_PickupPost" id="pickup-post">
               <a href="/how-to-start-programming/">
                 <figure class="_PickupPost__thumbnail">
                   <img src="" alt="" width="" height="" decoding="async">
                 </figure>
-                <div class="_PickupPost__text">
+                <div class="_PickupPost__meta">
                   <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
                   <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
                   <p class="_PickupPost__button"><span>この記事を読む</span></p>
@@ -68,7 +67,7 @@
                   <figure class="_ArticleItem__thumbnail">
                     <img src="" alt="" width="" height="" decoding="async">
                   </figure>
-                  <div class="_ArticleItem__text">
+                  <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
                     <p class="_ArticleItem__description">クリプト運用（DeFi）の生放送セミナーを実施します。僕は「約２億円」を仮想通貨の「DeFi」で運用しており、利回りは「6.7%」くらいです。セミナーでは「DeFiのメリット＆デメリット、リスク回避の方法、実際の使い方」を解説します。</p>
                   </div>
@@ -84,7 +83,7 @@
                   <figure class="_ArticleItem__thumbnail">
                     <img src="" alt="" width="" height="" decoding="async">
                   </figure>
-                  <div class="_ArticleItem__text">
+                  <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
                     <p class="_ArticleItem__description">クリプト運用（DeFi）の生放送セミナーを実施します。僕は「約２億円」を仮想通貨の「DeFi」で運用しており、利回りは「6.7%」くらいです。セミナーでは「DeFiのメリット＆デメリット、リスク回避の方法、実際の使い方」を解説します。</p>
                   </div>
@@ -93,19 +92,19 @@
               </article>
             <!-- /._ArticlePart -->
             </section>
-            <nav class="Pagination" role="navigation" aria-label="ページネーション">
+            <nav class="Pagination" aria-label="ページネーション">
               <ul class="Pagination__numbers">
-                <li class="-page"><span>1</span></li>
-                <li class="-page"><a href="/page/2/">2</a></li>
-                <li class="-dots"><span>…</span></li>
-                <li class="-page"><a href="/page/10/">10</a></li>
-                <li class="-next"><a href="/page/2/"></a></li>
+                <li class="Pagination__number -page"><span>1</span></li>
+                <li class="Pagination__number -page"><a href="/page/2/">2</a></li>
+                <li class="Pagination__number -dots"><span>…</span></li>
+                <li class="Pagination__number -page"><a href="/page/10/">10</a></li>
+                <li class="Pagination__number -next"><a href="/page/2/"></a></li>
               </ul>
             <!-- /.Pagination -->
             </nav>
           <!-- /.MainContent -->
           </main>
-          <aside class="Sidebar" id="sidebar" role="complementary">
+          <aside class="Sidebar" id="sidebar">
             <div class="Search" id="search">
               <form action="https://web-compass.blog/" class="SearchForm" method="get" role="search">
                 <input type="text" name="s" value="" placeholder="検索" class="SearchForm__input">
@@ -125,10 +124,10 @@
             <!-- /._Menu -->
             </div>
             <section class="Profile" id="profile">
+              <h4 class="Profile__author">はや氏</h4>
               <figure class="Profile__authorImg">
                 <img src="" alt="はや氏の似顔絵" width="" height="" decoding="async">
               </figure>
-              <h4 class="Profile__author">はや氏</h4>
               <p class="Profile__job">Webエンジニア</p>
               <p class="Profile__text">WordPressが得意なWeb屋。HPcode代表。300件以上のWordPress案件を対応してきました。SE → 農家 → アフィリエイター → Web屋。生まれは三重県。<br>
               ホームページ制作を承っております。お気軽にお問い合わせください！</p>
@@ -163,10 +162,10 @@
         </div>
       </div>
 
-      <footer class="PageFooter" id="page-footer" role="contentinfo">
+      <footer class="PageFooter" id="page-footer">
         <div class="inner">
           <div class="FooterInformation">
-            <p class="FooterInformation__name">
+            <p class="FooterInformation__logo">
               <a href="/">webコンパス</a>
             </p>
             <p class="FooterInformation__message">現役WebエンジニアによるWeb制作者・プログラマーのための独学サイト</p>
@@ -180,10 +179,10 @@
             <div class="FooterBottom__category">
               <h4>Category</h4>
               <ul class="FooterBottom__categoryList">
-                <li>WordPress</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li><a href="/category/wordpress/">WordPress</a></li>
+                <li><a href="/category/html/">HTML</a></li>
+                <li><a href="/category/css/">CSS</a></li>
+                <li><a href="/category/javascript/">JavaScript</a></li>
               </ul>
             </div>
             <div class="FooterBottom__contact">
