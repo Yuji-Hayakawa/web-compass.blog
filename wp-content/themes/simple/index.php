@@ -49,7 +49,7 @@
             <article class="_PickupPost" id="pickup-post">
               <a href="/how-to-start-programming/">
                 <figure class="_PickupPost__thumbnail">
-                  <img src="" alt="" width="" height="" decoding="async">
+                  <img src="" alt="" width="574" height="318" decoding="async">
                 </figure>
                 <div class="_PickupPost__meta">
                   <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
@@ -65,7 +65,7 @@
               <article class="_ArticleItem">
                 <a href="/">
                   <figure class="_ArticleItem__thumbnail">
-                    <img src="" alt="" width="" height="" decoding="async">
+                    <img src="" alt="" width="200" height="166" decoding="async">
                   </figure>
                   <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
@@ -81,7 +81,7 @@
               <article class="_ArticleItem">
                 <a href="/">
                   <figure class="_ArticleItem__thumbnail">
-                    <img src="" alt="" width="" height="" decoding="async">
+                    <img src="" alt="" width="200" height="166" decoding="async">
                   </figure>
                   <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
@@ -126,7 +126,7 @@
             <section class="Profile" id="profile">
               <h4 class="Profile__author">はや氏</h4>
               <figure class="Profile__authorImg">
-                <img src="" alt="はや氏の似顔絵" width="" height="" decoding="async">
+                <img src="" alt="はや氏の似顔絵" width="120" height="120" decoding="async">
               </figure>
               <p class="Profile__job">Webエンジニア</p>
               <p class="Profile__text">WordPressが得意なWeb屋。HPcode代表。300件以上のWordPress案件を対応してきました。SE → 農家 → アフィリエイター → Web屋。生まれは三重県。<br>
