@@ -17,6 +17,7 @@
     <meta name="twitter:site" content="@ここに自分のTwitterユーザ名">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="canonical" href="https://web-compass.blog">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   </head>
   <body class="Page">
     <div class="PageContainer" id="page-container">
@@ -31,10 +32,10 @@
               <ul class="HeaderGlobalNav__list">
                 <li><a href="/category/wordpress/"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
                 <li><a href="/category/html/"><i class="fa-solid fa-code"></i>HTML</a></li>
-                <li><a href="/category/css/"><i class="fa-solid fa-brackets-curly"></i>CSS</a></li>
+                <li><a href="/category/css/"><i class="fa-solid fa-palette"></i>CSS</a></li>
                 <li><a href="/category/javascript/"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
                 <li><a href="/category/work/"><i class="fa-solid fa-desktop"></i>Work</a></li>
-                <li><a href="/category/books/"><i class="fa-light fa-book-open"></i>Books</a></li>
+                <li><a href="/category/books/"><i class="fa-solid fa-book-open"></i>Books</a></li>
               </ul>
             </div>
           <!-- /.HeaderGlobalNav -->
@@ -117,9 +118,9 @@
                 <li><a href="/beginner/"><i class="fa-regular fa-star-half-stroke"></i>初心者向け</a></li>
                 <li><a href="/intermediate/"><i class="fa-solid fa-graduation-cap"></i>中級者向け</a></li>
                 <li><a href="/html/"><i class="fa-solid fa-code"></i>HTML</a></li>
-                <li><a href="/css/"><i class="fa-solid fa-brackets-curly"></i>CSS</a></li>
+                <li><a href="/css/"><i class="fa-solid fa-palette"></i>CSS</a></li>
                 <li><a href="/wordpress/"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
-                <li><a href="/books/"><i class="fa-light fa-book-open"></i>おすすめ本</a></li>
+                <li><a href="/books/"><i class="fa-solid fa-book-open"></i>おすすめ本</a></li>
               </ul>
             <!-- /._Menu -->
             </div>
