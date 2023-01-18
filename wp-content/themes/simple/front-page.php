@@ -21,7 +21,7 @@
             <section class="_ArticlePart _Popular" id="popular">
               <h2 class="_ArticlePart__title">人気記事</h2>
               <article class="_ArticleItem">
-                <a href="<?php echo home_url( '/' ); ?>">
+                <a href="/">
                   <figure class="_ArticleItem__thumbnail">
                     <img src="" alt="" width="200" height="166" decoding="async">
                   </figure>
