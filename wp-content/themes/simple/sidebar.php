@@ -1,11 +1,5 @@
 <aside class="Sidebar" id="sidebar">
-  <div class="Search" id="search">
-    <form action="https://web-compass.blog/" class="SearchForm" method="get" role="search">
-      <input type="text" name="s" value="" placeholder="検索" class="SearchForm__input">
-      <button type="submit" class="SearchForm__submit" aria-label="検索する"></button>
-    </form>
-  <!-- /.Search -->
-  </div>
+  <?php get_search_form(); ?>
   <div class="_Menu" id="menu">
     <ul class="_Menu__list">
       <li><a href="<?php echo home_url( '/beginner/' ); ?>"><i class="fa-regular fa-star-half-stroke"></i>初心者向け</a></li>
