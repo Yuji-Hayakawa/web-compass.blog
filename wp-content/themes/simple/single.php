@@ -34,7 +34,14 @@
             </nav>
           <!-- /.MainContent -->
           </main>
-          <?php get_sidebar(); ?>
+          <aside class="Sidebar" id="sidebar">
+            <?php get_search_form(); ?>
+            <?php get_sidebar( 'menu' ); ?>
+            <?php get_sidebar( 'profile' ); ?>
+            <?php get_sidebar( 'categories' ); ?>
+            <?php get_sidebar( 'archives' ); ?>
+          <!-- /.Sidebar -->
+          </aside>
         </div>
       <!-- /.PageContent -->
       </div>
