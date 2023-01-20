@@ -26,16 +26,8 @@
                 <?php endif; ?>
             <!-- /._ArticlePart -->
             </section>
-            <nav class="Pagination" aria-label="ページネーション">
-              <ul class="Pagination__numbers">
-                <li class="Pagination__number -page"><span>1</span></li>
-                <li class="Pagination__number -page"><a href="<?php echo home_url( '/page/2/' ); ?>">2</a></li>
-                <li class="Pagination__number -dots"><span>…</span></li>
-                <li class="Pagination__number -page"><a href="<?php echo home_url( '/page/10/' ); ?>">10</a></li>
-                <li class="Pagination__number -next"><a href="<?php echo home_url( '/page/2/' ); ?>"></a></li>
-              </ul>
-            <!-- /.Pagination -->
-            </nav>
+            <?php if( function_exists( 'wp_pagenavi' )) { wp_pagenavi(); } ?>
+            <?php get_template_part( 'breadcrumb' ); ?>
           <!-- /.MainContent -->
           </main>
           <aside class="Sidebar" id="sidebar">
