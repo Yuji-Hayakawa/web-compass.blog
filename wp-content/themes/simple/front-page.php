@@ -6,7 +6,7 @@
         <article class="_PickupPost" id="pickup-post">
           <a href="/">
             <figure class="_PickupPost__thumbnail">
-              <img src="" alt="" width="574" height="318" decoding="async">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="318" decoding="async">
             </figure>
             <div class="_PickupPost__meta">
               <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
@@ -23,7 +23,7 @@
           <article class="_ArticleItem">
             <a href="/">
               <figure class="_ArticleItem__thumbnail">
-                <img src="" alt="" width="200" height="166" decoding="async">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="200" height="166" decoding="async">
               </figure>
               <div class="_ArticleItem__meta">
                 <h3 class="_ArticleItem__title">【実質無料】クリプト運用（DeFi）の「生放送セミナー」を実施します</h3>
@@ -41,7 +41,11 @@
               <article <?php post_class('_ArticleItem'); ?> >
                 <a href="<?php the_permalink(); ?>">
                   <figure class="_ArticleItem__thumbnail">
-                    <?php the_post_thumbnail('medium') ?>
+                    <?php if ( has_post_thumbnail() ): ?>
+                      <?php the_post_thumbnail('medium') ?>
+                    <?php else: ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="200" height="166" decoding="async">
+                    <?php endif; ?>
                   </figure>
                   <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>

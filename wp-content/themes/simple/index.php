@@ -2,11 +2,6 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
-        <?php if ( is_home() || is_front_page() ) : ?>
-        ここにトップページにだけ表示したいHTMLを記載
-        <?php else : ?>
-        ここにトップページ意外に表示したいHTMLを記載
-        <?php endif; ?>
         <section class="_ArticlePart">
           <?php if ( is_month() ): ?>
             <h2 class="_ArticlePart__title">「<?php the_time( 'Y年m月' ); ?>」の記事一覧</h2>
@@ -18,7 +13,11 @@
                 <article <?php post_class( '_ArticleItem' ); ?> >
                   <a href="<?php the_permalink(); ?>">
                     <figure class="_ArticleItem__thumbnail">
-                      <?php the_post_thumbnail( 'medium' ) ?>
+                      <?php if ( has_post_thumbnail() ): ?>
+                        <?php the_post_thumbnail('medium') ?>
+                      <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="200" height="166" decoding="async">
+                      <?php endif; ?>
                     </figure>
                     <div class="_ArticleItem__meta">
                       <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>

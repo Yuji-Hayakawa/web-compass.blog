@@ -1,7 +1,7 @@
 <section class="Profile" id="profile">
   <h4 class="Profile__author">はや氏</h4>
   <figure class="Profile__authorImg">
-    <img src="" alt="" width="120" height="120" decoding="async">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" decoding="async">
   </figure>
   <p class="Profile__job">Webエンジニア</p>
   <p class="Profile__text">WordPressが得意なWeb屋。HPcode代表。300件以上のWordPress案件を対応してきました。SE → 農家 → アフィリエイター → Web屋。生まれは三重県。<br>
