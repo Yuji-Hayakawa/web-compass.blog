@@ -2,22 +2,6 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
-        <?php if ( is_home() && !is_paged() ): ?>
-        <article class="_PickupPost" id="pickup-post">
-          <a href="/">
-            <figure class="_PickupPost__thumbnail">
-              <img src="" alt="" width="574" height="318" decoding="async">
-            </figure>
-            <div class="_PickupPost__meta">
-              <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
-              <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
-              <p class="_PickupPost__button"><span>この記事を読む</span></p>
-            </div>
-          </a>
-        <!-- /._PickupPost -->
-        </article>
-        <?php endif; ?>
-
         <section class="_ArticlePart _Popular" id="popular">
           <h2 class="_ArticlePart__title">人気記事</h2>
           <article class="_ArticleItem">

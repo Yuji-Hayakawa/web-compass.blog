@@ -1,4 +1,4 @@
-<!-- TODO: 個別記事ページを仮で作成。後にデザインから修正作業を行う。 -->
+<!-- TODO: 個別投稿ページを仮で作成。後にデザインから修正作業を行う。 -->
 <?php get_header(); ?>
   <div class="PageContent" id="page-content">
     <div class="inner">
