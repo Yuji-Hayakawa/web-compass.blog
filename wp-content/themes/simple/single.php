@@ -15,7 +15,10 @@
               <main class="ArticleContent__main">
                 <?php the_content(); ?>
                 <?php get_template_part( 'breadcrumb' ); ?>
-                <!-- TODO： ここにタグ（カテゴリー）を出力 -->
+                <?php
+                  $before = '<i class="fa-solid fa-tag"></i>';
+                  the_tags( $before, '' );
+                ?>
               <!-- /.ArticleContent__main -->
               </main>
               <footer class="ArticleContent__footer">
