@@ -4,7 +4,7 @@
       <main class="MainContent" id="main-content">
         <?php if ( have_posts() ): ?>
           <?php while ( have_posts() ): the_post(); ?>
-            <article <?php post_class('ArticleContent'); ?> >
+            <article <?php post_class( 'ArticleContent' ); ?> >
               <header class="ArticleContent__header">
                 <div class="ArticleContent__title">
                   <h1><?php the_title(); ?></h1>
@@ -12,30 +12,30 @@
                 </div>
               <!-- /.ArticleContent__header -->
               </header>
-              <main class="ArticleContent__main">
+              <div class="ArticleContent__body">
                 <?php the_content(); ?>
                 <?php get_template_part( 'breadcrumb' ); ?>
                 <?php
                   $before = '<i class="fa-solid fa-tag"></i>';
                   the_tags( $before, '' );
                 ?>
-              <!-- /.ArticleContent__main -->
-              </main>
+              <!-- /.ArticleContent__body -->
+              </div>
               <footer class="ArticleContent__footer">
-                <div class="ShareBtn">
-                  <ul class="ShareBtn__list">
-                    <li class="ShareBtn__item -twitter"><a href="" target="_blank"><i class="fa-brands fa-twitter"></i>Tweet</a></li>
-                    <li class="ShareBtn__item -feedly"><a href="" target="_blank"><i class="fa-solid fa-rss"></i>Feedly</a></li>
-                    <li class="ShareBtn__item -copy"><a href=""><i class="fa-regular fa-copy"></i>Copy URL</a></li>
+                <div class="_ShareBtn">
+                  <ul class="_ShareBtn__list">
+                    <li class="_ShareBtn__item -twitter"><a href="" target="_blank"><i class="fa-brands fa-twitter"></i>Tweet</a></li>
+                    <li class="_ShareBtn__item -feedly"><a href="" target="_blank"><i class="fa-solid fa-rss"></i>Feedly</a></li>
+                    <li class="_ShareBtn__item -copy"><a href=""><i class="fa-regular fa-copy"></i>Copy URL</a></li>
                   </ul>
-                <!-- /.ShareBtn -->
+                <!-- /._ShareBtn -->
                 </div>
-                <section class="Profile" id="profile">
+                <section class="Profile -author" id="profile">
                   <h3 class="Profile__title">この記事を書いた人</h3>
                   <div class="ProfileBox">
                     <div class="ProfileBox__author">
                       <figure class="Profile__authorImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" decoding="async">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" loading="lazy" decoding="async">
                       </figure>
                       <p class="Profile__author">はや氏</p>
                       <p class="Profile__job">Webエンジニア</p>
@@ -49,29 +49,29 @@
                   </div>
                 <!-- /.Profile -->
                 </section>
-                <section class="RelatedArticle" id="related-article">
-                  <h3 class="RelatedArticle__title">こちらの関連記事もどうぞ</h3>
-                  <ul class="RelatedArticle__list">
-                    <li class="RelatedArticle__item">
+                <section class="_RelatedArticle" id="related-article">
+                  <h3 class="_RelatedArticle__title">こちらの関連記事もどうぞ</h3>
+                  <ul class="_RelatedArticle__list">
+                    <li class="_RelatedArticle__item">
                       <a href="<?php the_permalink(); ?>">
-                        <div class="RelatedArticle__thumbnail">
+                        <div class="_RelatedArticle__thumbnail">
                           <figure>
                             <?php if ( has_post_thumbnail() ): ?>
-                              <?php the_post_thumbnail('medium') ?>
+                              <?php the_post_thumbnail( 'medium' ) ?>
                             <?php else: ?>
-                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="260" height="135" decoding="async">
+                              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="260" height="135" loading="lazy" decoding="async">
                             <?php endif; ?>
                           </figure>
                         </div>
-                        <div class="RelatedArticle__meta">
-                          <p class="RelatedArticle__title">関連記事のタイトル</p>
+                        <div class="_RelatedArticle__meta">
+                          <p class="_RelatedArticle__title">関連記事のタイトル</p>
                           <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'Y年m月d日' ); ?></time>
                         </div>
                       </a>
                     </li>
-                    <!-- TODO: 上記の.RelatedArticle__itemを下記に3回繰り返す -->
+                    <!-- TODO: 上記の._RelatedArticle__itemを下記に3回繰り返す -->
                   </ul>
-                <!-- /.RelatedArticle -->
+                <!-- /._RelatedArticle -->
                 </section>
               <!-- /.ArticleContent__footer -->
               </footer>
