@@ -18,6 +18,5 @@
   <meta name="twitter:site" content="@ここに自分のTwitterユーザ名">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="canonical" href="https://web-compass.blog">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/normalize.css">
   <?php wp_head(); ?>
 </head>

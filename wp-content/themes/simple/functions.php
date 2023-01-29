@@ -16,7 +16,7 @@ function add_styles() {
   // reset style
   wp_register_style(
     'reset_style',
-    get_template_directory_uri() . 'assets/css/normalize.css',
+    get_template_directory_uri() . '/assets/css/normalize.css',
     array(),
     '1.0'
   );
@@ -24,7 +24,7 @@ function add_styles() {
   // main style
   wp_enqueue_style(
     'main_style',
-    get_template_directory_uri() . 'assets/css/style.css',
+    get_template_directory_uri() . '/assets/css/style.css',
     array('reset_style'),
     '1.0'
   );
