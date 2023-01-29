@@ -1,11 +1,11 @@
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php if ( is_404() ) : ?>
     <meta name="robots" content="noindex, nofollow">
   <?php else : ?>
     <meta name="description" content="ページの紹介文">
   <?php endif; ?>
-  <meta name="viewport" content="width=device-width">
   <meta name="format-detection" content="telephone=no, email=no, address=no">
   <meta property="og:url" content="https://web-compass.blog/">
   <meta property="og:title" content="ページのタイトル">
@@ -18,8 +18,6 @@
   <meta name="twitter:site" content="@ここに自分のTwitterユーザ名">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="canonical" href="https://web-compass.blog">
-  <?php
-    wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-    wp_head();
-  ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/normalize.css">
+  <?php wp_head(); ?>
 </head>
