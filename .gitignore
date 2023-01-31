@@ -17,3 +17,4 @@
 !/wp-content/themes/jstork19_custom
 !/wp-content/themes/simple
 /wp-includes/*
+node_modules
