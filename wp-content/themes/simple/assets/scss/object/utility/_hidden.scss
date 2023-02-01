@@ -6,23 +6,17 @@
 /* PC
    ========================================================================== */
 .u-hidden-pc {
-  @include mq-up("pc") {
-    display: none;
-  }
+  display: none;
 }
 
 /* Tablet
   ========================================================================== */
 .u-hidden-tab {
-  @include mq-up("tab-only") {
-    display: none;
-  }
+  display: none;
 }
 
 /* SP
   ========================================================================== */
 .u-hidden-sp {
-  @include mq-up("sp") {
-    display: none;
-  }
+  display: none;
 }
