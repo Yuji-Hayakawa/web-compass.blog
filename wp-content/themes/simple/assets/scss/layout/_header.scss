@@ -1,3 +1,19 @@
 /* ==========================================================================
    Header
    ========================================================================== */
+
+
+@use "../foundation/base" as base;
+
+.PageHeader {
+  background-color: base.$header-background;
+  padding-top: 20px;
+
+  > .inner {
+    min-width: 1240px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
