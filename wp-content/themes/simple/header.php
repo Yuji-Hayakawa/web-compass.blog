@@ -6,10 +6,15 @@
       <div class="PageContainer" id="page-container">
         <header class="PageHeader" id="page-header">
           <div class="inner">
-            <!-- TODO: ロゴに関してTOPページの時はh1、それ以外はdivにする条件分岐を記述する -->
-            <h1 class="HeaderPageId">
-              <a href="https://web-compass.blog/">webコンパス</a>
-            </h1>
+            <?php if ( is_home() && !is_paged() ): ?>
+              <h1 class="HeaderPageId">
+                <a href="https://web-compass.blog/">webコンパス</a>
+              </h1>
+            <?php else: ?>
+              <div class="HeaderPageId">
+                <a href="https://web-compass.blog/">webコンパス</a>
+              </div>
+            <?php endif; ?>
             <p>国内シェアNo1サービスの「中の人」がブログ運営に役立つ情報をわかりやすくお届け！</p>
             <nav class="HeaderGlobalNav" id="global-nav" aria-label="メインメニュー">
               <div class="HeaderGlobalNav__contents">
