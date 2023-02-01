@@ -6,6 +6,7 @@
       <div class="PageContainer" id="page-container">
         <header class="PageHeader" id="page-header">
           <div class="inner">
+            <!-- TODO: ロゴに関してTOPページの時はh1、それ以外はdivにする条件分岐を記述する -->
             <h1 class="HeaderPageId">
               <a href="https://web-compass.blog/">webコンパス</a>
             </h1>

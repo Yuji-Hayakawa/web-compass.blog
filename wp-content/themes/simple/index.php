@@ -12,6 +12,10 @@
               <?php while ( have_posts() ): the_post(); ?>
                 <article <?php post_class( '_ArticleItem' ); ?> >
                   <a href="<?php the_permalink(); ?>">
+                    <div class="_ArticleItem__meta">
+                      <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
+                      <?php the_excerpt(); ?>
+                    </div>
                     <figure class="_ArticleItem__thumbnail">
                       <?php if ( has_post_thumbnail() ): ?>
                         <?php the_post_thumbnail('medium') ?>
@@ -19,10 +23,6 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="200" height="166" decoding="async">
                       <?php endif; ?>
                     </figure>
-                    <div class="_ArticleItem__meta">
-                      <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                      <?php the_excerpt(); ?>
-                    </div>
                   </a>
                 <!-- /._ArticleItem -->
                 </article>

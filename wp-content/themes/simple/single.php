@@ -34,10 +34,10 @@
                   <h3 class="Profile__title">この記事を書いた人</h3>
                   <div class="ProfileBox">
                     <div class="ProfileBox__author">
+                      <p class="Profile__author">はや氏</p>
                       <figure class="Profile__authorImg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" loading="lazy" decoding="async">
                       </figure>
-                      <p class="Profile__author">はや氏</p>
                       <p class="Profile__job">Webエンジニア</p>
                     </div>
                     <div class="ProfileBox__text">
@@ -54,6 +54,10 @@
                   <ul class="_RelatedArticle__list">
                     <li class="_RelatedArticle__item">
                       <a href="<?php the_permalink(); ?>">
+                        <div class="_RelatedArticle__meta">
+                          <p class="_RelatedArticle__title">関連記事のタイトル</p>
+                          <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'Y年m月d日' ); ?></time>
+                        </div>
                         <div class="_RelatedArticle__thumbnail">
                           <figure>
                             <?php if ( has_post_thumbnail() ): ?>
@@ -62,10 +66,6 @@
                               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="260" height="135" loading="lazy" decoding="async">
                             <?php endif; ?>
                           </figure>
-                        </div>
-                        <div class="_RelatedArticle__meta">
-                          <p class="_RelatedArticle__title">関連記事のタイトル</p>
-                          <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'Y年m月d日' ); ?></time>
                         </div>
                       </a>
                     </li>

@@ -5,14 +5,14 @@
         <?php if ( is_home() && !is_paged() ): ?>
         <article class="_PickupPost" id="pickup-post">
           <a href="/">
-            <figure class="_PickupPost__thumbnail">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="318" decoding="async">
-            </figure>
             <div class="_PickupPost__meta">
               <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
               <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
               <p class="_PickupPost__button"><span>この記事を読む</span></p>
             </div>
+            <figure class="_PickupPost__thumbnail">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="318" decoding="async">
+            </figure>
           </a>
         <!-- /._PickupPost -->
         </article>
@@ -31,6 +31,10 @@
             <?php while ( $set_query -> have_posts() ): $set_query -> the_post(); ?>
               <article <?php post_class('_ArticleItem'); ?> >
                 <a href="<?php the_permalink(); ?>">
+                  <div class="_ArticleItem__meta">
+                    <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
+                    <?php the_excerpt(); ?>
+                  </div>
                   <figure class="_ArticleItem__thumbnail">
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail('medium') ?>
@@ -38,10 +42,6 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="200" height="166" decoding="async">
                     <?php endif; ?>
                   </figure>
-                  <div class="_ArticleItem__meta">
-                    <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                    <?php the_excerpt(); ?>
-                  </div>
                 </a>
               <!-- /._ArticleItem -->
               </article>
@@ -63,6 +63,10 @@
             <?php while ( $set_query -> have_posts() ): $set_query -> the_post(); ?>
               <article <?php post_class('_ArticleItem'); ?> >
                 <a href="<?php the_permalink(); ?>">
+                  <div class="_ArticleItem__meta">
+                    <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
+                    <?php the_excerpt(); ?>
+                  </div>
                   <figure class="_ArticleItem__thumbnail">
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail('medium') ?>
@@ -70,10 +74,6 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="200" height="166" decoding="async">
                     <?php endif; ?>
                   </figure>
-                  <div class="_ArticleItem__meta">
-                    <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                    <?php the_excerpt(); ?>
-                  </div>
                 </a>
               <!-- /._ArticleItem -->
               </article>
