@@ -320,6 +320,8 @@ template {
    -------------------------------------------------------------------------- */
 /* Opacity
    -------------------------------------------------------------------------- */
+/* Anchor
+   -------------------------------------------------------------------------- */
 /* Header
    -------------------------------------------------------------------------- */
 /* Main
@@ -346,16 +348,113 @@ template {
    Footer
    ========================================================================== */
 .PageFooter {
-  background-color: #414647;
-  padding-bottom: 40px;
-  padding-top: 66px;
+  background-color: #1D2127;
+  padding-bottom: 20px;
+  padding-top: 60px;
 }
 .PageFooter > .inner {
   margin-left: auto;
   margin-right: auto;
-  min-width: 1240px;
+  max-width: calc(100% - 40px);
   padding-left: 20px;
   padding-right: 20px;
+}
+.PageFooter .FooterInformation .FooterInformation__logo {
+  font-size: 2.4rem;
+  margin: 12px 0;
+  text-align: center;
+}
+.PageFooter .FooterInformation .FooterInformation__logo > a {
+  color: #fff;
+}
+.PageFooter .FooterInformation .FooterInformation__message {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.PageFooter .FooterBottom {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  margin-top: 60px;
+}
+.PageFooter .FooterBottom .FooterBottom__description {
+  max-width: 332px;
+  width: 33.3333333333%;
+}
+.PageFooter .FooterBottom .FooterBottom__description > h4 {
+  border-bottom: 1px solid #414647;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.PageFooter .FooterBottom .FooterBottom__description p {
+  color: #BCB8B8;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.PageFooter .FooterBottom .FooterBottom__category {
+  max-width: 332px;
+  width: 33.3333333333%;
+}
+.PageFooter .FooterBottom .FooterBottom__category > h4 {
+  border-bottom: 1px solid #414647;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.PageFooter .FooterBottom .FooterBottom__category .FooterBottom__categoryList > li > a {
+  color: #BCB8B8;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.PageFooter .FooterBottom .FooterBottom__category .FooterBottom__categoryList > li > a:hover {
+  opacity: 0.6;
+}
+.PageFooter .FooterBottom .FooterBottom__contact {
+  max-width: 332px;
+  width: 33.3333333333%;
+}
+.PageFooter .FooterBottom .FooterBottom__contact > h4 {
+  border-bottom: 1px solid #414647;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.PageFooter .FooterBottom .FooterBottom__contact .FooterBottom__contactButton {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 332px;
+  text-align: center;
+}
+.PageFooter .FooterBottom .FooterBottom__contact .FooterBottom__contactButton > a {
+  color: #333;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6;
+  padding: 15px;
+  transition: box-shadow 0.25s;
+}
+.PageFooter .FooterBottom .FooterBottom__contact .FooterBottom__contactButton > a:hover {
+  opacity: 0.6;
+}
+.PageFooter .FooterCopyright {
+  border-top: 1px solid #414647;
+  font-size: 1.2rem;
+  margin-top: 70px;
+  padding-top: 30px;
+  text-align: center;
+}
+.PageFooter .FooterCopyright > small {
+  color: #fff;
+}
+.PageFooter .FooterCopyright > small > a {
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -368,9 +467,21 @@ template {
 .PageHeader > .inner {
   margin-left: auto;
   margin-right: auto;
-  min-width: 1240px;
+  max-width: calc(100% - 40px);
   padding-left: 20px;
   padding-right: 20px;
+}
+.PageHeader .HeaderPageId {
+  font-size: 3rem;
+  margin: 10px 0;
+  text-align: center;
+}
+.PageHeader .HeaderPageId > a {
+  color: #000;
+}
+.PageHeader .PageHeader__catchcopy {
+  margin: 0;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -390,6 +501,68 @@ template {
   margin-left: 64px;
   margin-top: 40px;
   max-width: 350px;
+}
+
+/* ==========================================================================
+   Element Reset
+   ========================================================================== */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: #6297C7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6297C7;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Global Nav
+   ========================================================================== */
+.HeaderGlobalNav {
+  background-color: #1D2127;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.HeaderGlobalNav .HeaderGlobalNav__list {
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 14px 0;
+}
+.HeaderGlobalNav .HeaderGlobalNav__list > li {
+  border-right: 1px solid #fff;
+  max-width: 150px;
+  text-align: center;
+  width: 16.6666666667%;
+}
+.HeaderGlobalNav .HeaderGlobalNav__list > li:first-of-type {
+  border-left: 1px solid #fff;
+}
+.HeaderGlobalNav .HeaderGlobalNav__list > li:hover {
+  background-color: #686868;
+}
+.HeaderGlobalNav .HeaderGlobalNav__list > li > a {
+  color: #fff;
+  display: block;
+}
+.HeaderGlobalNav .HeaderGlobalNav__list > li > a > i {
+  display: block;
+  font-size: 24px;
+  padding-bottom: 8px;
 }
 
 /* ==========================================================================

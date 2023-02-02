@@ -4,13 +4,13 @@
             <p class="FooterInformation__logo">
               <a href="/">webコンパス</a>
             </p>
-            <p class="FooterInformation__message">現役WebエンジニアによるWeb制作者・プログラマーのための独学サイト</p>
+            <p class="FooterInformation__message">元文学部出身の「現役コーダー」がWeb制作に役立つ情報をわかりやすく解説！</p>
           </div>
           <div class="FooterBottom">
             <div class="FooterBottom__description">
               <h4>webコンパスについて</h4>
-              <p>webコンパスは〇〇の解説をしています。<br>
-              現役コーダーによるWebサイト制作の解説をしています。</p>
+              <p>元文学部出身でIT音痴だった僕が、Webサイト制作を学ぶ中でつまずいたポイントを中心にわかりやすく解説しています。</p>
+              <p>現役コーダーによるWebサイト制作に関する情報を発信しています。</p>
             </div>
             <div class="FooterBottom__category">
               <h4>Category</h4>
@@ -33,7 +33,7 @@
           <!-- /.FooterBottom -->
           </div>
           <p class="FooterCopyright">
-            <small>© 2023<a href="/">webコンパス</a></small>
+            <small>© 2023 <a href="/">webコンパス</a></small>
           </p>
         </div>
       <!-- /.PageFooter -->

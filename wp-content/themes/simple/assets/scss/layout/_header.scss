@@ -11,11 +11,26 @@
   // NOTE: ここまでLayout
 
   > .inner {
-    min-width: 1240px;
+    max-width: calc( 100% - 40px );
     padding-right: 20px;
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
     // NOTE: ここまでLayout
+  }
+
+  .HeaderPageId {
+    font-size: 3rem;
+    margin: 10px 0;
+    text-align: center;
+
+    > a {
+      color: #000;
+    }
+  }
+
+  .PageHeader__catchcopy {
+    margin: 0;
+    text-align: center;
   }
 }

@@ -7,4 +7,40 @@
 
 .HeaderGlobalNav {
   background-color: base.$color-key;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  .HeaderGlobalNav__list {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+
+    > li {
+      max-width: 150px;
+      width: calc( 100% / 6 );
+      border-right: 1px solid #fff;
+      text-align: center;
+
+      &:first-of-type {
+        border-left: 1px solid #fff;
+      }
+
+      &:hover {
+        background-color: #686868;
+      }
+
+      > a {
+        color: #fff;
+        display: block;
+
+        > i {
+          display: block;
+          font-size: 24px;
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
 }

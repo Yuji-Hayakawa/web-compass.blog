@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Element Reset
+   ========================================================================== */
+
+
+// NOTE: normalize.cssでresetしきれなかった要素に直接スタイルを当てる
+
+@use "../../foundation/base" as base;
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: base.$anchor;
+  text-decoration: none;
+}
+
+a:visited {
+  color: base.$anchor-visited;
+}
+
+p {
+  font-size: base.$font-size-base;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

@@ -15,7 +15,7 @@
                 <a href="https://web-compass.blog/">webコンパス</a>
               </div>
             <?php endif; ?>
-            <p>国内シェアNo1サービスの「中の人」がブログ運営に役立つ情報をわかりやすくお届け！</p>
+            <p class="PageHeader__catchcopy">元文学部出身の「現役コーダー」がWeb制作に役立つ情報をわかりやすく解説！</p>
             <nav class="HeaderGlobalNav" id="global-nav" aria-label="メインメニュー">
               <div class="HeaderGlobalNav__contents">
                 <ul class="HeaderGlobalNav__list">
