@@ -8,6 +8,7 @@
 .PageHeader {
   background-color: base.$header-background;
   padding-top: 20px;
+  // NOTE: ここまでLayout
 
   > .inner {
     min-width: 1240px;
@@ -15,5 +16,6 @@
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
+    // NOTE: ここまでLayout
   }
 }
