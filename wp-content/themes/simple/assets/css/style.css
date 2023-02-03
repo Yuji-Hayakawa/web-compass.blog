@@ -521,6 +521,7 @@ a:visited {
 
 p {
   font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 ul {
@@ -563,6 +564,33 @@ ul {
   display: block;
   font-size: 24px;
   padding-bottom: 8px;
+}
+
+/* ==========================================================================
+   Page navi
+   ========================================================================== */
+.wp-pagenavi {
+  margin-top: 70px;
+}
+.wp-pagenavi .current {
+  background-color: #2C3036;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 14px;
+  padding: 16px 18px;
+}
+.wp-pagenavi a {
+  background-color: #BCBCBC;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 14px;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+.wp-pagenavi a:hover {
+  background-color: #2C3036;
 }
 
 /* ==========================================================================

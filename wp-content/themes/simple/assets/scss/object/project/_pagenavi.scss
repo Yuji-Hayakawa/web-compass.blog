@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Page navi
+   ========================================================================== */
+
+
+@use "../../foundation/base" as base;
+
+.wp-pagenavi {
+  margin-top: 70px;
+
+  .current {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: base.$pagination-background--current;
+    padding: 16px 18px;
+    margin-left: 14px;
+    font-weight: bold;
+  }
+
+  a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 16px 18px;
+    color: #fff;
+    background-color: #BCBCBC;
+    margin-left: 14px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: base.$pagination-background--current;
+    }
+  }
+}
