@@ -489,9 +489,7 @@ template {
    ========================================================================== */
 .PageContent {
   background-color: #C7C7C7;
-  padding-bottom: 100px;
-  padding-right: 46px;
-  padding-top: 40px;
+  padding: 40px 46px 100px 46px;
 }
 
 /* ==========================================================================
@@ -527,6 +525,10 @@ p {
 ul {
   list-style: none;
   padding: 0;
+}
+
+figure {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -591,6 +593,58 @@ ul {
 }
 .wp-pagenavi a:hover {
   background-color: #2C3036;
+}
+
+/* ==========================================================================
+   Key Visual
+   ========================================================================== */
+._PickupPost {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 80px;
+  max-width: 100%;
+}
+._PickupPost a {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+._PickupPost a ._PickupPost__meta {
+  line-height: 1.6;
+  margin: 0 24px;
+  order: 2;
+  width: 45%;
+}
+._PickupPost a ._PickupPost__meta ._PickupPost__title {
+  color: #333;
+  font-size: 2.4rem;
+  margin: 10px 0 0;
+}
+._PickupPost a ._PickupPost__meta ._PickupPost__description {
+  color: #4A4A4A;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+._PickupPost a ._PickupPost__meta ._PickupPost__button {
+  border: 1px solid #7B7B7B;
+  border-radius: 24px;
+  color: #7B7B7B;
+  font-size: 1.4rem;
+  margin: 10px 20px 0;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-align: center;
+}
+._PickupPost a ._PickupPost__meta ._PickupPost__button:hover {
+  -webkit-text-decoration: underline solid #7B7B7B 2px;
+  text-decoration: underline solid #7B7B7B 2px;
+}
+._PickupPost a ._PickupPost__thumbnail {
+  order: 1;
+  width: 55%;
+}
+._PickupPost a ._PickupPost__thumbnail img {
+  width: 100%;
 }
 
 /* ==========================================================================

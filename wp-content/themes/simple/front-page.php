@@ -11,7 +11,7 @@
               <p class="_PickupPost__button"><span>この記事を読む</span></p>
             </div>
             <figure class="_PickupPost__thumbnail">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="318" decoding="async">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="320" decoding="async">
             </figure>
           </a>
         <!-- /._PickupPost -->

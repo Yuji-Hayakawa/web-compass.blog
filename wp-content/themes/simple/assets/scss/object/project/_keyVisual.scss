@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Key Visual
+   ========================================================================== */
+
+
+@use "../../foundation/base" as base;
+
+._PickupPost {
+  max-width: 100%;
+  margin: 0 80px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ._PickupPost__meta {
+      order: 2;
+      line-height: base.$line-height-base;
+      width: 45%;
+      margin: 0 24px;
+
+      ._PickupPost__title {
+        margin: 10px 0 0;
+        color: #333;
+        font-size: 2.4rem;
+      }
+
+      ._PickupPost__description {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: #4A4A4A;
+      }
+
+      ._PickupPost__button {
+        font-size: 1.4rem;
+        color: #7B7B7B;
+        text-align: center;
+        margin: 10px 20px 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 1px solid #7B7B7B;
+        border-radius: 24px;
+
+        &:hover {
+          text-decoration: underline solid #7B7B7B 2px;
+        }
+      }
+    }
+
+    ._PickupPost__thumbnail {
+      order: 1;
+      width: 55%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
