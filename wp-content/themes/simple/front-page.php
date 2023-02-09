@@ -1,8 +1,7 @@
 <?php get_header(); ?>
   <div class="PageContent" id="page-content">
     <div class="inner">
-      <main class="MainContent" id="main-content">
-        <?php if ( is_home() && !is_paged() ): ?>
+      <?php if ( is_home() && !is_paged() ): ?>
         <article class="_PickupPost" id="pickup-post">
           <a href="/">
             <div class="_PickupPost__meta">
@@ -16,8 +15,9 @@
           </a>
         <!-- /._PickupPost -->
         </article>
-        <?php endif; ?>
+      <?php endif; ?>
 
+      <main class="MainContent" id="main-content">
         <section class="_ArticlePart _Popular" id="popular">
           <h2 class="_ArticlePart__title">人気記事</h2>
           <?php

@@ -6,8 +6,8 @@
 @use "../../foundation/base" as base;
 
 ._PickupPost {
-  max-width: 100%;
-  margin: 0 80px;
+  min-width: 676px;
+  // margin: 0 80px;
   background-color: #fff;
   border-radius: 10px;
 

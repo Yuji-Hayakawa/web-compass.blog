@@ -13,6 +13,7 @@
 @use "layout/_header";
 @use "layout/_main";
 @use "layout/_sidebar";
+@use "layout/_ArticlePart";
 
 // ==========================================================================
 // Object
@@ -22,6 +23,7 @@
 // Component
 // -----------------------------------------------------------------
 
+@use "object/component/_articlePartTitle";
 
 // -----------------------------------------------------------------
 // Project

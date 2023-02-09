@@ -8,4 +8,14 @@
 .PageContent {
   background-color: base.$main-background;
   padding: 40px 46px 100px 46px;
+
+  > .inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.MainContent {
+  width: 67%;
 }

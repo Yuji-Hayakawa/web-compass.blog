@@ -491,14 +491,43 @@ template {
   background-color: #C7C7C7;
   padding: 40px 46px 100px 46px;
 }
+.PageContent > .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.MainContent {
+  width: 67%;
+}
 
 /* ==========================================================================
    Sidebar
    ========================================================================== */
 .Sidebar {
-  margin-left: 64px;
+  margin-left: 5%;
   margin-top: 40px;
-  max-width: 350px;
+  width: 28%;
+}
+
+/* ==========================================================================
+   _Article Part
+   ========================================================================== */
+._ArticlePart {
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   Article Part Title
+   ========================================================================== */
+._ArticlePart__title {
+  border-bottom: 3px solid #1D2127;
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2;
+  padding-bottom: 8px;
 }
 
 /* ==========================================================================
@@ -573,6 +602,7 @@ figure {
    ========================================================================== */
 .wp-pagenavi {
   margin-top: 70px;
+  max-width: 786px;
 }
 .wp-pagenavi .current {
   background-color: #2C3036;
@@ -601,8 +631,7 @@ figure {
 ._PickupPost {
   background-color: #fff;
   border-radius: 10px;
-  margin: 0 80px;
-  max-width: 100%;
+  min-width: 676px;
 }
 ._PickupPost a {
   align-items: center;
