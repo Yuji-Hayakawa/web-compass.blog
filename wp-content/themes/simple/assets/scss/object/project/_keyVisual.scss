@@ -7,9 +7,12 @@
 
 ._PickupPost {
   min-width: 676px;
-  // margin: 0 80px;
   background-color: #fff;
   border-radius: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   a {
     display: flex;

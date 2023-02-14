@@ -340,8 +340,6 @@ template {
    -------------------------------------------------------------------------- */
 /* Breakpoints (PCbase)
    -------------------------------------------------------------------------- */
-/* Header width
-   -------------------------------------------------------------------------- */
 /* Typography
    ========================================================================== */
 /* ==========================================================================
@@ -489,7 +487,7 @@ template {
    ========================================================================== */
 .PageContent {
   background-color: #C7C7C7;
-  padding: 40px 46px 100px 46px;
+  padding: 40px 80px 100px 80px;
 }
 .PageContent > .inner {
   display: flex;
@@ -498,14 +496,14 @@ template {
 }
 
 .MainContent {
-  width: 67%;
+  width: 64%;
 }
 
 /* ==========================================================================
    Sidebar
    ========================================================================== */
 .Sidebar {
-  margin-left: 5%;
+  margin-left: 8%;
   margin-top: 40px;
   width: 28%;
 }
@@ -528,6 +526,86 @@ template {
   font-weight: bold;
   line-height: 2;
   padding-bottom: 8px;
+}
+
+/* ==========================================================================
+   Button
+   ========================================================================== */
+.c-button {
+  background-color: #f00;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8rem;
+  max-width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.25s;
+  width: 300px;
+}
+.c-button:focus, .c-button:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #f00;
+}
+
+/* ==========================================================================
+   Heading
+   ========================================================================== */
+.c-lv1Heading {
+  background: #f00;
+  color: #fff;
+  font-size: 2rem;
+  padding: 30px 10px;
+  text-align: center;
+}
+.c-lv1Heading > span {
+  display: inline-block;
+  position: relative;
+  transform: translateY(-20%);
+}
+.c-lv1Heading > span::after {
+  background-color: currentColor;
+  bottom: -10px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+.c-lv2Heading {
+  border-bottom: 4px solid #f00;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.c-lv3Heading {
+  border-bottom: 2px solid #f00;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+
+.c-lv4Heading {
+  border-left: 2px solid #f00;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 6px;
+}
+
+.c-lv5Heading {
+  color: #f00;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.c-lv6Heading {
+  font-size: 1.2rem;
 }
 
 /* ==========================================================================
@@ -633,6 +711,9 @@ figure {
   border-radius: 10px;
   min-width: 676px;
 }
+._PickupPost:hover {
+  opacity: 0.8;
+}
 ._PickupPost a {
   align-items: center;
   display: flex;
@@ -679,9 +760,73 @@ figure {
 /* ==========================================================================
    Article
    ========================================================================== */
+._ArticleItem {
+  background-color: #fff;
+  border-radius: 10px;
+}
+._ArticleItem:hover {
+  opacity: 0.8;
+}
+._ArticleItem:not(:first-child) {
+  margin-top: 32px;
+}
+._ArticleItem > a {
+  align-items: center;
+  display: flex;
+}
+._ArticleItem ._ArticleItem__meta {
+  margin: 0 25px;
+  order: 2;
+}
+._ArticleItem ._ArticleItem__meta ._ArticleItem__title {
+  color: #333;
+  font-size: 1.8rem;
+  line-height: 2;
+  margin: 0;
+}
+._ArticleItem ._ArticleItem__meta p {
+  color: #4A4A4A;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+._ArticleItem ._ArticleItem__thumbnail {
+  order: 1;
+}
+
 /* ==========================================================================
    Profile
    ========================================================================== */
+/* ==========================================================================
+   Searchform
+   ========================================================================== */
+.Search {
+  margin: 0;
+}
+.Search .SearchForm {
+  position: relative;
+}
+.Search .SearchForm__input {
+  font-size: 2rem;
+  padding: 10px 0 10px 10px;
+  width: 94%;
+}
+.Search .SearchForm__submit {
+  background-color: #2C3036;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+._Menu ._Menu__list {
+  display: flex;
+}
 /* ==========================================================================
    Hover
    ========================================================================== */

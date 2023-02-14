@@ -24,6 +24,8 @@
 // -----------------------------------------------------------------
 
 @use "object/component/_articlePartTitle";
+@use "object/component/_button";
+@use "object/component/_heading";
 
 // -----------------------------------------------------------------
 // Project
@@ -35,6 +37,8 @@
 @use "object/project/_keyVisual";
 @use "object/project/_article";
 @use "object/project/_profile";
+@use "object/project/_searchform";
+@use "object/project/_menu";
 
 // -----------------------------------------------------------------
 // Utility

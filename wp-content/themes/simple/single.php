@@ -35,9 +35,9 @@
                   <div class="ProfileBox">
                     <div class="ProfileBox__author">
                       <p class="Profile__author">はや氏</p>
-                      <figure class="Profile__authorImg">
+                      <div class="Profile__authorImg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" loading="lazy" decoding="async">
-                      </figure>
+                      </div>
                       <p class="Profile__job">Webエンジニア</p>
                     </div>
                     <div class="ProfileBox__text">
@@ -59,13 +59,13 @@
                           <time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'Y年m月d日' ); ?></time>
                         </div>
                         <div class="_RelatedArticle__thumbnail">
-                          <figure>
+                          <div>
                             <?php if ( has_post_thumbnail() ): ?>
                               <?php the_post_thumbnail( 'medium' ) ?>
                             <?php else: ?>
                               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="260" height="135" loading="lazy" decoding="async">
                             <?php endif; ?>
-                          </figure>
+                          </div>
                         </div>
                       </a>
                     </li>

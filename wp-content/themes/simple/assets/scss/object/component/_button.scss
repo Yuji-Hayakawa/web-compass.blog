@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Button
+   ========================================================================== */
+
+@use "../../foundation/base" as base;
+
+// NOTE: 『CSS設計完全ガイド』を参考 P241
+.c-button {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px 10px;
+  background-color: #f00;
+  color: #fff;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px rgb(0, 0, 0, .16);
+  text-align: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: .25s;
+
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #f00;
+  }
+}

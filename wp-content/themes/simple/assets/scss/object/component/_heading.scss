@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Heading
+   ========================================================================== */
+
+@use "../../foundation/base" as base;
+
+// NOTE: 『CSS設計完全ガイド』を参考 P279~P289
+
+// 背景色の上に中央揃えでテキストを配置し、その下に1pxの下線をいれた見出し
+.c-lv1Heading {
+  padding: 30px 10px;
+  background: #f00;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+
+  > span {
+    position: relative;
+    display: inline-block;
+    transform: translateY(-20%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 80px;
+      height: 1px;
+      background-color: currentColor;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+// テキストの下に下線をつけた見出し
+.c-lv2Heading {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #f00;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+// テキストの下に下線(細め)をつけた見出し
+.c-lv3Heading {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #f00;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+// テキストの左側に傍線をつけた見出し
+.c-lv4Heading {
+  padding-left: 6px;
+  border-left: 2px solid #f00;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+// .c-lv4Headingから傍線を取った控えめな見出し
+.c-lv5Heading {
+  color: #f00;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+// 本文のフォントサイズから少し大きくした程度の見出し
+.c-lv6Heading {
+  font-size: 1.2rem;
+}

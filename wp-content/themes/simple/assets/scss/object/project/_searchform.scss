@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Searchform
+   ========================================================================== */
+
+
+.Search {
+  margin: 0;
+
+  .SearchForm {
+    position: relative;
+  }
+
+  .SearchForm__input {
+    width: 94%;
+    font-size: 2rem;
+    padding: 10px 0 10px 10px;
+  }
+
+  .SearchForm__submit {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    background-color: #2C3036;
+  }
+}
