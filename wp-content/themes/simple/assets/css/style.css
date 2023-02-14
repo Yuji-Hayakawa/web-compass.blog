@@ -824,9 +824,40 @@ figure {
 /* ==========================================================================
    Menu
    ========================================================================== */
+._Menu {
+  margin-top: 40px;
+}
 ._Menu ._Menu__list {
   display: flex;
+  flex-wrap: wrap;
 }
+._Menu ._Menu__list > li {
+  background-color: #2C3036;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  width: calc((100% - 20px) / 2);
+}
+._Menu ._Menu__list > li:hover {
+  opacity: 0.6;
+}
+._Menu ._Menu__list > li:nth-child(2n) {
+  margin-right: 0;
+}
+._Menu ._Menu__list > li a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: center;
+  line-height: 1;
+  min-height: 122px;
+}
+._Menu ._Menu__list > li a > i {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 /* ==========================================================================
    Hover
    ========================================================================== */

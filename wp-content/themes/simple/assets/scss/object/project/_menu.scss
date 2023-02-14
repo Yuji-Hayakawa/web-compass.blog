@@ -3,17 +3,42 @@
    ========================================================================== */
 
 
+@use "../../foundation/base" as base;
+
 ._Menu {
+  margin-top: 40px;
 
   ._Menu__list {
     display: flex;
-    
+    flex-wrap: wrap;
+
     > li {
+      width: calc(( 100% - 20px ) / 2);
+      margin: 0 20px 20px 0;
+      background-color: #2C3036;
+      text-align: center;
+
+      &:hover {
+        opacity: base.$opacity;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
 
       a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 122px;
+        font-size: 1.5rem;
+        line-height: 1;
+        color: #fff;
 
         > i {
-
+          display: block;
+          margin-bottom: 10px;
+          font-size: 24px;
         }
       }
     }
