@@ -796,6 +796,50 @@ figure {
 /* ==========================================================================
    Profile
    ========================================================================== */
+.Profile {
+  background-color: #fff;
+  margin-top: 80px;
+  padding: 4px 4px 20px;
+}
+.Profile .Profile__img {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 20px;
+}
+.Profile .Profile__img .Profile__author {
+  font-size: 2rem;
+  margin: 20px 0 0;
+}
+.Profile .Profile__img img {
+  background-color: #C7C7C7;
+  border-radius: 50%;
+}
+.Profile .Profile__job {
+  color: #4A4A4A;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: 5px 0 0;
+  text-align: center;
+}
+.Profile .Profile__text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin: 25px 0 0;
+  padding: 0 15px;
+}
+.Profile .Profile__detail {
+  margin-top: 20px;
+  text-align: right;
+}
+.Profile .Profile__detail a {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.Profile .Profile__detail a:hover {
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    Searchform
    ========================================================================== */

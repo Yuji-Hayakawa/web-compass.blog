@@ -1,3 +1,58 @@
 /* ==========================================================================
    Profile
    ========================================================================== */
+
+
+@use "../../foundation/base" as base;
+
+.Profile {
+  background-color: base.$color-background;
+  margin-top: 80px;
+  padding: 4px 4px 20px;
+
+  .Profile__img {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 20px;
+
+    .Profile__author {
+      margin: 20px 0 0;
+      font-size: 2rem;
+    }
+
+    img {
+      background-color: #C7C7C7;
+      border-radius: 50%;
+    }
+  }
+
+  .Profile__job {
+    text-align: center;
+    margin: 5px 0 0;
+    color: #4A4A4A;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .Profile__text {
+    margin: 25px 0 0;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  .Profile__detail {
+    text-align: right;
+    margin-top: 20px;
+
+    a {
+      font-size: 1.6rem;
+      line-height: 1.8;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
