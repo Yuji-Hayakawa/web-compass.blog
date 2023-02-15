@@ -3,7 +3,8 @@
   <ul class="Archive__list">
     <?php
       $args = array(
-        'type' => 'monthly'
+        'type' => 'monthly',
+        'show_post_count' => true,
       );
       wp_get_archives( $args );
     ?>

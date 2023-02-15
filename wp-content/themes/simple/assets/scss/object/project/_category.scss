@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Category
+   ========================================================================== */
+
+
+@use "../../foundation/base" as base;
+
+.Category {
+  background-color: base.$color-background;
+  margin-top: 80px;
+  padding: 4px 4px 20px;
+
+  .Category__title {
+    padding: 0 10px;
+    font-size: 2rem;
+  }
+
+  .Category__list {
+    padding: 0 5px;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    .cat-item {
+      margin: 0;
+      padding: 12px 20px;
+      border-bottom: 1px solid #C7C7C7;
+
+      a {
+        color: #4A4A4A;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

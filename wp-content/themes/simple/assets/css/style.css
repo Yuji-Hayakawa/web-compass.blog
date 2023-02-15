@@ -903,6 +903,64 @@ figure {
 }
 
 /* ==========================================================================
+   Category
+   ========================================================================== */
+.Category {
+  background-color: #fff;
+  margin-top: 80px;
+  padding: 4px 4px 20px;
+}
+.Category .Category__title {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+.Category .Category__list {
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0 5px;
+}
+.Category .Category__list .cat-item {
+  border-bottom: 1px solid #C7C7C7;
+  margin: 0;
+  padding: 12px 20px;
+}
+.Category .Category__list .cat-item a {
+  color: #4A4A4A;
+}
+.Category .Category__list .cat-item a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Archive
+   ========================================================================== */
+.Archive {
+  background-color: #fff;
+  margin-top: 80px;
+  padding: 4px 4px 20px;
+}
+.Archive .Archive__title {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+.Archive .Archive__list {
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0 5px;
+}
+.Archive .Archive__list > li {
+  border-bottom: 1px solid #C7C7C7;
+  margin: 0;
+  padding: 12px 20px;
+}
+.Archive .Archive__list > li a {
+  color: #4A4A4A;
+}
+.Archive .Archive__list > li a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
    Hover
    ========================================================================== */
 .u-hover-opacity {
