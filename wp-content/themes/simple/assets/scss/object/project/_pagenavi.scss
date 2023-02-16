@@ -4,6 +4,7 @@
 
 @use "../../foundation/base" as base;
 
+// NOTE: WordPressプラグイン「WP-PageNavi」に上書きするスタイル
 .wp-pagenavi {
   $_block: '.wp-pagenavi';
   margin-top: 70px;

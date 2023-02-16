@@ -2,6 +2,7 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
+        <?php get_template_part( 'breadcrumb' ); ?>
         <section class="_ArticlePart">
           <h2 class="_ArticlePart__title">「<?php the_search_query(); ?>」の検索結果</h2>
           <?php if ( have_posts() ): ?>

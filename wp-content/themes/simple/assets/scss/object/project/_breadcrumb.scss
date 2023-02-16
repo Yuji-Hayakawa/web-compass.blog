@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Article
+   ========================================================================== */
+
+// NOTE: WordPressプラグイン「Breadcrumb NavXT」に上書きするスタイル
+.Breadcrumb {
+  $_block: '.Breadcrumb';
+  font-size: 1.3rem;
+
+  > .inner {
+    > span {
+    margin-right: 5px;
+
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+    }
+  }
+}

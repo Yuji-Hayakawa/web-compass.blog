@@ -2,6 +2,7 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
+        <?php get_template_part( 'breadcrumb' ); ?>
         <section class="_ArticlePart">
           <h2 class="_ArticlePart__title">「<?php echo get_the_category()[0]->name; ?>」の記事一覧</h2>
             <?php if ( have_posts() ): ?>
@@ -27,7 +28,6 @@
         <!-- /._ArticlePart -->
         </section>
         <?php if( function_exists( 'wp_pagenavi' )) { wp_pagenavi(); } ?>
-        <?php get_template_part( 'breadcrumb' ); ?>
       <!-- /.MainContent -->
       </main>
       <aside class="Sidebar" id="sidebar">

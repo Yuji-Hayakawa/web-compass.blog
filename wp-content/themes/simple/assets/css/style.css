@@ -471,6 +471,7 @@ template {
 }
 .PageHeader .HeaderPageId {
   font-size: 3rem;
+  font-weight: bold;
   margin: 10px 0;
   text-align: center;
 }
@@ -958,6 +959,19 @@ figure {
 }
 .Archive .Archive__list > li a:hover {
   text-decoration: underline;
+}
+
+/* ==========================================================================
+   Article
+   ========================================================================== */
+.Breadcrumb {
+  font-size: 1.3rem;
+}
+.Breadcrumb > .inner > span {
+  margin-right: 5px;
+}
+.Breadcrumb > .inner > span:not(:first-child) {
+  margin-left: 5px;
 }
 
 /* ==========================================================================

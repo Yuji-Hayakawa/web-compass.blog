@@ -2,6 +2,7 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
+        <?php get_template_part( 'breadcrumb' ); ?>
         <?php if ( have_posts() ): ?>
           <?php while ( have_posts() ): the_post(); ?>
             <article <?php post_class( 'ArticleContent' ); ?> >
@@ -14,7 +15,6 @@
               </header>
               <div class="ArticleContent__body">
                 <?php the_content(); ?>
-                <?php get_template_part( 'breadcrumb' ); ?>
                 <?php
                   $before = '<i class="fa-solid fa-tag"></i>';
                   the_tags( $before, '' );
