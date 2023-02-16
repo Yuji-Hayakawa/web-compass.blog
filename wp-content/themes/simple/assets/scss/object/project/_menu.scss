@@ -2,10 +2,10 @@
    Menu
    ========================================================================== */
 
-
 @use "../../foundation/base" as base;
 
 ._Menu {
+  $_block: '._Menu';
   margin-top: 40px;
 
   ._Menu__list {

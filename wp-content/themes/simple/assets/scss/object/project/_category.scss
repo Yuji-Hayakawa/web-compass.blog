@@ -2,10 +2,10 @@
    Category
    ========================================================================== */
 
-
 @use "../../foundation/base" as base;
 
 .Category {
+  $_block: '.Category';
   background-color: base.$color-background;
   margin-top: 80px;
   padding: 4px 4px 20px;

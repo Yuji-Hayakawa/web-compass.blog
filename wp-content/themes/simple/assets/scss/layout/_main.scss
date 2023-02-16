@@ -2,10 +2,10 @@
    Main
    ========================================================================== */
 
-
 @use "../foundation/base" as base;
 
 .PageContent {
+  $_block: '.PageContent';
   background-color: base.$main-background;
   padding: 40px 80px 100px 80px;
 

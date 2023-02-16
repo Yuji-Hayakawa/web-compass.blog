@@ -2,10 +2,10 @@
    Key Visual
    ========================================================================== */
 
-
 @use "../../foundation/base" as base;
 
 ._PickupPost {
+  $_block: '._PickupPost';
   min-width: 676px;
   background-color: #fff;
   border-radius: 10px;

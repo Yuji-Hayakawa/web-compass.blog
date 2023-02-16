@@ -2,10 +2,10 @@
    Archive
    ========================================================================== */
 
-
 @use "../../foundation/base" as base;
 
 .Archive {
+  $_block: '.Archive';
   background-color: base.$color-background;
   margin-top: 80px;
   padding: 4px 4px 20px;

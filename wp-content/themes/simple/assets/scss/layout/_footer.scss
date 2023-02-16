@@ -2,10 +2,10 @@
    Footer
    ========================================================================== */
 
-
 @use "../foundation/base" as base;
 
 .PageFooter {
+  $_block: '.PageFooter';
   background-color: base.$footer-background;
   padding-top: 60px;
   padding-bottom: 20px;

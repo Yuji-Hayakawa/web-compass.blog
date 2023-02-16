@@ -2,10 +2,10 @@
    Profile
    ========================================================================== */
 
-
 @use "../../foundation/base" as base;
 
 .Profile {
+  $_block: '.Profile';
   background-color: base.$color-background;
   margin-top: 80px;
   padding: 4px 4px 20px;

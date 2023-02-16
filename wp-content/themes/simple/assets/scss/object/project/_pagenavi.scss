@@ -2,10 +2,10 @@
    Page navi
    ========================================================================== */
 
-
 @use "../../foundation/base" as base;
 
 .wp-pagenavi {
+  $_block: '.wp-pagenavi';
   margin-top: 70px;
   max-width: 786px;
 

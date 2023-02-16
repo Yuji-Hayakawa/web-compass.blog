@@ -4,10 +4,11 @@
 
 @use "../../foundation/base" as base;
 
-// NOTE: 『CSS設計完全ガイド』を参考 P279~P289
+// NOTE: 『CSS設計完全ガイド』P279-289 を参考
 
 // 背景色の上に中央揃えでテキストを配置し、その下に1pxの下線をいれた見出し
 .c-lv1Heading {
+  $_block: '.c-lv1Heading';
   padding: 30px 10px;
   background: #f00;
   color: #fff;
@@ -34,6 +35,7 @@
 
 // テキストの下に下線をつけた見出し
 .c-lv2Heading {
+  $_block: '.c-lv2Heading';
   padding-bottom: 10px;
   border-bottom: 4px solid #f00;
   font-size: 1.8rem;
@@ -42,6 +44,7 @@
 
 // テキストの下に下線(細め)をつけた見出し
 .c-lv3Heading {
+  $_block: '.c-lv3Heading';
   padding-bottom: 6px;
   border-bottom: 2px solid #f00;
   font-size: 1.6rem;
@@ -50,6 +53,7 @@
 
 // テキストの左側に傍線をつけた見出し
 .c-lv4Heading {
+  $_block: '.c-lv4Heading';
   padding-left: 6px;
   border-left: 2px solid #f00;
   font-size: 1.4rem;
@@ -58,6 +62,7 @@
 
 // .c-lv4Headingから傍線を取った控えめな見出し
 .c-lv5Heading {
+  $_block: '.c-lv5Heading';
   color: #f00;
   font-size: 1.3rem;
   font-weight: bold;
@@ -65,5 +70,6 @@
 
 // 本文のフォントサイズから少し大きくした程度の見出し
 .c-lv6Heading {
+  $_block: '.c-lv6Heading';
   font-size: 1.2rem;
 }
