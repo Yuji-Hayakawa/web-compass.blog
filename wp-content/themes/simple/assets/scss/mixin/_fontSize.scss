@@ -1,0 +1,47 @@
+// ==============================================================================
+// Font size
+// デザイン上の数値から、font-size, line-height, letter-spacingを指定します
+// 使用対象 = 文字サイズを変更したい要素
+// @param {number|boolean} $_fontSize 文字サイズ (Photoshopにおけるフォントサイズのpt数)
+// @param {number|boolean} $_lineHeight 行の高さ (Photoshopにおける行送りのpt数)
+// @param {number|boolean} $_letterSpace 文字間 (Photoshopにおけるトラッキングの数値)
+// ===============================================================================
+@mixin fontSize($_fontSize: null, $_lineHeight: null, $_letterSpace: null) {
+  // 各指定がnullの場合、SP・PCそれぞれの初期値を設定
+  @if is-null($_fontSize) {
+    $_fontSize: if($spNaturalFontSize, $pcNaturalFontSize);
+  }
+  @if is-null($_lineHeight) {
+    $_lineHeight: if($spNaturalLineHeight, $pcNaturalLineHeight);
+  }
+  @if is-null($_letterSpace) {
+    $_letterSpace: if($spNaturalLetterSpace, $pcNaturalLetterSpace);
+  }
+
+  // 単位がある場合はそのまま使用、単位がない場合は掛け値を算出
+  @if $_lineHeight {
+    @if unit($_lineHeight) != "" {
+      line-height: $_lineHeight;
+    } @else if $_fontSize {
+      line-height: $_lineHeight / $_fontSize;
+    }
+  }
+
+  // 文字サイズの単位を変更して設定
+  @if $_fontSize {
+    @if unit($_fontSize) != "" {
+      font-size: $_fontSize;
+    } @else {
+      font-size: $_fontSize * .1rem;
+    }
+  }
+
+  // 文字間の単位を変更して設定
+  @if $_letterSpace {
+    @if unit($_letterSpace) != "" {
+      letter-spacing: $_letterSpace;
+    } @else {
+      letter-spacing: $_letterSpace * .001em;
+    }
+  }
+}

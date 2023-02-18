@@ -2,11 +2,11 @@
    Archive
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 .Archive {
   $_block: '.Archive';
-  background-color: base.$color-background;
+  background-color: var.$colorBackground;
   margin-top: 80px;
   padding: 4px 4px 20px;
 

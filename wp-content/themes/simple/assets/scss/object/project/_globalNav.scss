@@ -2,11 +2,11 @@
    Global Nav
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 .HeaderGlobalNav {
   $_block: '.HeaderGlobalNav';
-  background-color: base.$color-key;
+  background-color: var.$colorKey;
   margin-right: -20px;
   margin-left: -20px;
 

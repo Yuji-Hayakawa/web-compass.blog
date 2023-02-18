@@ -4,24 +4,24 @@
 
 // NOTE: normalize.cssでresetしきれなかった要素にスタイルを当てる
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 html {
   font-size: 62.5%;
 }
 
 a {
-  color: base.$anchor;
+  color: var.$anchor;
   text-decoration: none;
 }
 
 a:visited {
-  color: base.$anchor-visited;
+  color: var.$anchorVisited;
 }
 
 p {
-  font-size: base.$font-size-base;
-  line-height: base.$line-height-base;
+  font-size: var.$pcNaturalFontSize;
+  line-height: 1.6;
 }
 
 ul {

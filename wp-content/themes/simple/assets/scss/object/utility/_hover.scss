@@ -2,13 +2,13 @@
    Hover
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 .u-hover-opacity {
   transition: all 0.5s ease 0s;
   opacity: 1;
 
   &:hover {
-    opacity: base.$opacity;
+    opacity: var.$opacity;
   }
 }

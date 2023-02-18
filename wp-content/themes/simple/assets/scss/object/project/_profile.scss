@@ -2,11 +2,11 @@
    Profile
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 .Profile {
   $_block: '.Profile';
-  background-color: base.$color-background;
+  background-color: var.$colorBackground;
   margin-top: 80px;
   padding: 4px 4px 20px;
 

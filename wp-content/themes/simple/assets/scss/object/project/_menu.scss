@@ -2,7 +2,7 @@
    Menu
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 ._Menu {
   $_block: '._Menu';
@@ -19,7 +19,7 @@
       text-align: center;
 
       &:hover {
-        opacity: base.$opacity;
+        opacity: var.$opacity;
       }
 
       &:nth-child(2n) {

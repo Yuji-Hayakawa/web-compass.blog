@@ -1,0 +1,62 @@
+// ===================================================
+// Reset button style
+// button要素のブラウザスタイルを初期化します
+// 使用対象 = button要素
+// @param {list} $_margin marginの値
+// @param {list} $_padding paddingの値
+// @param {list} $_border borderの値
+// @param {list} $_borderRadius border-radiusの値
+// @param {list} $_outline outlineの値
+// @param {list} $_background backgroundの値
+// @param {list} $_backgroundColor background-colorの値
+// いずれのパラメーターも、値の上書きをする値がある場合に指定
+// ===================================================
+@mixin resetButtonStyle(
+  $_margin: null,
+  $_padding: null,
+  $_border: null,
+  $_borderRadius: null,
+  $_outline: null,
+  $_background: null,
+  $_backgroundColor: null
+) {
+  @if not is-null($_margin) {
+    margin: $_margin;
+  } @else {
+    margin: 0;
+  }
+
+  @if not is-null($_padding) {
+    padding: $_padding;
+  } @else {
+    padding: 0;
+  }
+
+  @if not is-null($_border) {
+    border: $_border;
+  } @else {
+    border: none;
+  }
+
+  @if not is-null($_borderRadius) {
+    border-radius: $_borderRadius;
+  } @else {
+    border-radius: 0;
+  }
+
+  @if not is-null($_outline) {
+    outline: $_outline;
+  } @else {
+    outline: none;
+  }
+
+  @if not is-null($_background) {
+    background: $_background;
+  } @else if not is-null($_backgroundColor) {
+    background-color: $_backgroundColor;
+  } @else {
+    background-color: transparent;
+  }
+  cursor: pointer;
+  appearance: none;
+}

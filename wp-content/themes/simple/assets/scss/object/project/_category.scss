@@ -2,11 +2,11 @@
    Category
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 .Category {
   $_block: '.Category';
-  background-color: base.$color-background;
+  background-color: var.$colorBackground;
   margin-top: 80px;
   padding: 4px 4px 20px;
 

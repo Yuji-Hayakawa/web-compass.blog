@@ -1,5 +1,8 @@
+@use "setting/_variable";
+
+@use "function/_is-null";
+
 @use "foundation/_reset";
-@use "foundation/_base";
 
 @use "layout/_footer";
 @use "layout/_header";

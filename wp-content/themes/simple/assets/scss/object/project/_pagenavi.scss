@@ -2,7 +2,7 @@
    Page navi
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 // NOTE: WordPressプラグイン「WP-PageNavi」に上書きするスタイル
 .wp-pagenavi {
@@ -13,7 +13,7 @@
   .current {
     font-size: 1.4rem;
     color: #fff;
-    background-color: base.$pagination-background--current;
+    background-color: var.$paginationBackgroundCurrent;
     padding: 16px 18px;
     margin-left: 14px;
     font-weight: bold;
@@ -29,7 +29,7 @@
     font-weight: bold;
 
     &:hover {
-      background-color: base.$pagination-background--current;
+      background-color: var.$paginationBackgroundCurrent;
     }
   }
 }

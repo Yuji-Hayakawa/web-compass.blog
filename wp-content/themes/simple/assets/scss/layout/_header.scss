@@ -2,11 +2,11 @@
    Header
    ========================================================================== */
 
-@use "../foundation/base" as base;
+@use "../setting/variable" as var;
 
 .PageHeader {
   $_block: '.PageHeader';
-  background-color: base.$header-background;
+  background-color: var.$headerBackground;
   padding-top: 20px;
   // NOTE: ここまでLayout
 

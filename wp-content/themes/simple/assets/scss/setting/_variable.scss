@@ -1,0 +1,84 @@
+// ==========================================================================
+// Variable
+// ==========================================================================
+
+// Break points
+// ==========================================================================
+
+
+// Width
+// ==========================================================================
+
+// Layout width
+// --------------------------------------------------------------------------
+$layoutWidthCanvas: 1440px;
+$layoutWidthContainer: 1080px;
+$layoutWidthSmartphone: 768px;
+
+
+// Color
+// ==========================================================================
+
+// Base color
+// --------------------------------------------------------------------------
+$colorKey: #1D2127;
+$colorBackground: #fff;
+$colorText: #424242;
+
+// Link
+// --------------------------------------------------------------------------
+$anchor: #6297C7;
+$anchorVisited: #6297C7;
+
+// Opacity
+// --------------------------------------------------------------------------
+$opacity: 0.6;
+
+// Header
+// --------------------------------------------------------------------------
+$headerBackground: #fff;
+$headerColor: #fff;
+
+// Main
+// --------------------------------------------------------------------------
+$mainBackground: #C7C7C7;
+
+// Footer
+// --------------------------------------------------------------------------
+$footerBackground: #1D2127;
+$footerColor: #fff;
+
+// Border
+// --------------------------------------------------------------------------
+$formBorderColor: #bdbdbd;
+$formBorderColorFocus: #9e9e9e;
+
+// Pagination
+// --------------------------------------------------------------------------
+$paginationBackground: #eee;
+$paginationBackgroundCurrent: #2C3036;
+
+
+// Text
+// ==========================================================================
+
+// PC
+// --------------------------------------------------------------------------
+$pcNaturalFontSize       : 16;
+$pcNaturalLineHeight     : 32;
+$pcNaturalLetterSpace    : 50;
+
+// SP
+// --------------------------------------------------------------------------
+$spNaturalFontSize       : 24;
+$spNaturalLineHeight     : 36;
+$spNaturalLetterSpace    : 50;
+
+
+// Typography
+// ==========================================================================
+$fontFamilyHkgw3: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+$fontFamilyHkgw6: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+$fontFamilyMincho: "游明朝体", "Yu Mincho", yumincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+$fontFamilyGothic: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+$fontFamilyBase: $fontFamilyHkgw3;

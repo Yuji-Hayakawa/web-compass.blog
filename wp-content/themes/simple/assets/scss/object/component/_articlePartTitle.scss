@@ -2,7 +2,7 @@
    Article Part Title
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 ._ArticlePart__title {
   $_block: '._ArticlePart__title';
@@ -10,6 +10,6 @@
   font-weight: bold;
   color: #333;
   line-height: 2;
-  border-bottom: 3px solid base.$color-key;
+  border-bottom: 3px solid var.$colorKey;
   padding-bottom: 8px;
 }

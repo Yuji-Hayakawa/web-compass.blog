@@ -2,7 +2,7 @@
    Key Visual
    ========================================================================== */
 
-@use "../../foundation/base" as base;
+@use "../../setting/variable" as var;
 
 ._PickupPost {
   $_block: '._PickupPost';
@@ -21,7 +21,7 @@
 
     ._PickupPost__meta {
       order: 2;
-      line-height: base.$line-height-base;
+      line-height: 1.6;
       width: 45%;
       margin: 0 24px;
 

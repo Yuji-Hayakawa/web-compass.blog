@@ -1,0 +1,15 @@
+// ==================================================
+// Reset hidden
+// hiddenによる非表示化の情報を初期化します
+// 使用対象 = hiddenを適用している要素
+// ==================================================
+@mixin resetHidden {
+  clip: auto;
+  overflow: visible;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

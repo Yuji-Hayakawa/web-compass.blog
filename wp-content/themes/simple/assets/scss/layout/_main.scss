@@ -2,11 +2,11 @@
    Main
    ========================================================================== */
 
-@use "../foundation/base" as base;
+@use "../setting/variable" as var;
 
 .PageContent {
   $_block: '.PageContent';
-  background-color: base.$main-background;
+  background-color: var.$mainBackground;
   padding: 40px 80px 100px 80px;
 
   > .inner {
