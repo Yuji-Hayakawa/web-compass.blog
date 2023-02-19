@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Share Btn
+   ========================================================================== */
+
+@use "../../setting/variable" as var;
+
+._ShareBtn {
+  $_block: '._ShareBtn';
+  margin: 25px 0;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    #{$_block}__item {
+      &.-line {
+        background-color: #48B826;
+      }
+
+      &.-twitter {
+        background-color: #2D91EC;
+      }
+
+      &.-feedly {
+        background-color: #9BDE79;
+      }
+
+      & a {
+        color: #FFF;
+
+        i {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

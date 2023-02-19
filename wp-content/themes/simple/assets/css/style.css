@@ -503,9 +503,9 @@ template {
    ========================================================================== */
 .c-button {
   background-color: #f00;
-  border: 2px solid transparent;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-size: 1.8rem;
   max-width: 100%;
@@ -516,9 +516,7 @@ template {
   width: 300px;
 }
 .c-button:focus, .c-button:hover {
-  background-color: #fff;
-  border-color: currentColor;
-  color: #f00;
+  opacity: 0.7;
 }
 
 /* ==========================================================================
@@ -941,6 +939,33 @@ figure {
 }
 .Breadcrumb > .inner > span:not(:first-child) {
   margin-left: 5px;
+}
+
+/* ==========================================================================
+   Share Btn
+   ========================================================================== */
+._ShareBtn {
+  margin: 25px 0;
+}
+._ShareBtn__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+._ShareBtn__list ._ShareBtn__item.-line {
+  background-color: #48B826;
+}
+._ShareBtn__list ._ShareBtn__item.-twitter {
+  background-color: #2D91EC;
+}
+._ShareBtn__list ._ShareBtn__item.-feedly {
+  background-color: #9BDE79;
+}
+._ShareBtn__list ._ShareBtn__item a {
+  color: #FFF;
+}
+._ShareBtn__list ._ShareBtn__item a i {
+  padding-right: 5px;
 }
 
 /* ==========================================================================
