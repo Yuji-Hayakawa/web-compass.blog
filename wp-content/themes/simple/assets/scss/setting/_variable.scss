@@ -2,19 +2,22 @@
 // Variable
 // ==========================================================================
 
-// Break points
-// ==========================================================================
-
 
 // Width
 // ==========================================================================
 
 // Layout width
 // --------------------------------------------------------------------------
-$layoutWidthCanvas: 1440px;
-$layoutWidthContainer: 1080px;
-$layoutWidthSmartphone: 768px;
+$layoutWidthInner: 1120px;
 
+
+// Breakpoints
+// ==========================================================================
+$breakpoints: (
+	"sp":  "screen and (max-width: 767px)",
+	"tab": "screen and (max-width: #{$layoutWidthInner - 1px})",
+	"pc":  "screen and (min-width: #{$layoutWidthInner})",
+);
 
 // Color
 // ==========================================================================
@@ -62,13 +65,13 @@ $paginationBackgroundCurrent: #1D2127;
 // Text
 // ==========================================================================
 
-// PC
+// PC (Don't edit)
 // --------------------------------------------------------------------------
 $pcNaturalFontSize       : 16;
 $pcNaturalLineHeight     : 32;
 $pcNaturalLetterSpace    : 50;
 
-// SP
+// SP (Don't edit)
 // --------------------------------------------------------------------------
 $spNaturalFontSize       : 24;
 $spNaturalLineHeight     : 36;

@@ -1,0 +1,13 @@
+// ====================================================================================
+// mq
+// メディアクエリを作成します
+// 詳細 = PC(inner幅まで)・Tablet(inner幅からiPad,768pxまで)・SP(767pxからiPhoneSE,320pxまで)
+// ====================================================================================
+
+@use "../setting/variable" as var;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get(var.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}

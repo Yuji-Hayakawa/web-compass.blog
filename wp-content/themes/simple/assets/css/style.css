@@ -459,6 +459,11 @@ template {
   margin: 0;
   text-align: center;
 }
+@media screen and (max-width: 1119px) {
+  .PageHeader .PageHeader__catchcopy {
+    margin-top: 70px;
+  }
+}
 
 /* ==========================================================================
    Main

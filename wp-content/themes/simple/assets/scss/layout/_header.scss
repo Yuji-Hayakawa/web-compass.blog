@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../setting/variable" as var;
+@use "../mixin/mq" as mq;
 
 .PageHeader {
   $_block: '.PageHeader';
@@ -33,5 +34,8 @@
   .PageHeader__catchcopy {
     margin: 0;
     text-align: center;
+    @include mq.mq('tab') {
+      margin-top: 70px;
+    }
   }
 }

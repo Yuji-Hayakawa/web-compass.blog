@@ -2,6 +2,11 @@
 
 @use "function/_is-null";
 
+@use "mixin/_fontSize";
+@use "mixin/_mq";
+@use "mixin/_resetButtonStyle";
+@use "mixin/_resetHidden";
+
 @use "foundation/_reset";
 
 @use "layout/_pageContainer";
