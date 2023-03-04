@@ -6,8 +6,11 @@
 
 .PageContent {
   $_block: '.PageContent';
-  background-color: var.$mainBackground;
-  padding: 40px 80px 100px 80px;
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 40px 100px 40px;
+
 
   > .inner {
     display: flex;

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Article Content
+   ========================================================================== */
+
+
+.ArticleContent {
+  $_block: '.ArticleContent';
+  background-color: #fff;
+  padding: 30px;
+
+  &Header__times {
+    color: #464444;
+    font-size: 1.2rem;
+  }
+
+  &Body {
+    p {
+      font-size: 1.6rm;
+      line-height: 1.8;
+    }
+  }
+}

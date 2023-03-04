@@ -1,10 +1,10 @@
 /* ==========================================================================
-   Sidebar
+   Page Container
    ========================================================================== */
 
-.Sidebar {
-  $_block: '.Sidebar';
-  width: 31%;
-  margin-top: 40px;
-  margin-left: 5%;
+@use "../setting/variable" as var;
+
+.PageContainer {
+  $_block: '.PageContainer';
+  background-color: var.$mainBackground;
 }

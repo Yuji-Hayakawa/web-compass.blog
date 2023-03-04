@@ -2,10 +2,9 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
-        <?php get_template_part( 'breadcrumb' ); ?>
-        <section class="_ArticlePart">
-          <h2 class="_ArticlePart__title">「<?php the_search_query(); ?>」の検索結果</h2>
-          <?php if ( have_posts() ): ?>
+        <?php if ( have_posts() ): ?>
+          <section class="_ArticlePart">
+            <h2 class="_ArticlePart__title">「<?php the_search_query(); ?>」の検索結果</h2>
             <?php while ( have_posts() ): the_post(); ?>
               <article <?php post_class( '_ArticleItem' ); ?> >
                 <a href="<?php the_permalink(); ?>">
@@ -21,14 +20,23 @@
                     <?php endif; ?>
                   </figure>
                 </a>
-              <!-- /._ArticleItem -->
+                <!-- /._ArticleItem -->
               </article>
             <?php endwhile; ?>
-          <?php else: ?>
-            <p>記事が見つかりませんでした。</p>
-          <?php endif; ?>
-        <!-- /._ArticlePart -->
-        </section>
+            <?php else: ?>
+              <section class="_NotfoundPage">
+                <h2 class="_ArticlePart__title">「<?php the_search_query(); ?>」の検索結果</h2>
+                <p class="_NotfoundPage__title">お探しの記事が見つかりませんでした。</p>
+                <p class="_NotfoundPage__description">指定されたキーワードでは記事が見つかりませんでした。<br>
+                別のキーワード、もしくはカテゴリーから記事をお探しください。</p>
+                <p class="_NotfoundPage__description">以下より キーワード を入力して検索してみてください。</p>
+                <?php get_search_form(); ?>
+                <p class="_NotfoundPage__description">以下のカテゴリーから記事を探すこともできます。</p>
+                <?php get_sidebar( 'categories' ); ?>
+                <div class="_NotfoundPage__return c-button"><a href="/">TOPページに戻る</a></div>
+              <!-- /._NotfoundPage -->
+              </section>
+            <?php endif; ?>
       <!-- /.MainContent -->
       </main>
       <aside class="Sidebar" id="sidebar">

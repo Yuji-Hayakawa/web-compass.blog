@@ -5,6 +5,7 @@
 // NOTE: WordPressプラグイン「Breadcrumb NavXT」に上書きするスタイル
 .Breadcrumb {
   $_block: '.Breadcrumb';
+  padding: 10px 0;
   font-size: 1.3rem;
 
   > .inner {

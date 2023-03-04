@@ -9,6 +9,7 @@
   background-color: var.$colorBackground;
   margin-top: 80px;
   padding: 4px 4px 20px;
+  border-radius: 10px;
 
   .Profile__img {
     display: flex;
@@ -44,7 +45,7 @@
 
   .Profile__detail {
     text-align: right;
-    margin-top: 20px;
+    padding: 10px 20px;
 
     a {
       font-size: 1.6rem;
@@ -52,6 +53,46 @@
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+  }
+
+  &.-author {
+    background-color: transparent;
+    padding: 0;
+
+    #{$_block}Box {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #C7C7C7;
+      border-radius: 10px;
+      padding: 20px 10px 10px;
+
+      &__author {
+        width: 140px;
+        text-align: center;
+
+        img {
+          background-color: #C7C7C7;
+          border-radius: 50%;
+        }
+
+        #{$_block}__author {
+          font-size: 1.7rem;
+          line-height: 1;
+          font-weight: bold;
+        }
+      }
+
+      &__text {
+        width: calc(100% - 150px);
+        border-left: 1px solid #C7C7C7;
+        margin: 0;
+        padding-left: 10px;
+
+        #{$_block}__text {
+          margin: 0;
+        }
       }
     }
   }

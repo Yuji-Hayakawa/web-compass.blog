@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Related Article
+   ========================================================================== */
+
+@use "../../setting/variable" as var;
+
+._RelatedArticle {
+  $_block: '._RelatedArticle';
+  margin-top: 80px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #{$_block}__item {
+      margin: 0 30px 40px;
+
+      > a {
+        display: flex;
+        flex-direction: column-reverse;
+
+        #{$_block}__title {
+          font-size: 16px;
+          line-height: 1.4;
+          letter-spacing: 0;
+        }
+
+        #{$_block}__thumbnail {
+          > img {
+            // width: 100%;
+          }
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

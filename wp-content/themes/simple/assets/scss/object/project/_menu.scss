@@ -6,17 +6,18 @@
 
 ._Menu {
   $_block: '._Menu';
-  margin-top: 40px;
+  margin-top: 80px;
 
   ._Menu__list {
     display: flex;
     flex-wrap: wrap;
 
     > li {
-      width: calc(( 100% - 20px ) / 2);
-      margin: 0 20px 20px 0;
+      width: calc(( 100% - 25px ) / 2);
+      margin: 0 25px 25px 0;
       background-color: #2C3036;
       text-align: center;
+      border-radius: 10px;
 
       &:hover {
         opacity: var.$opacity;

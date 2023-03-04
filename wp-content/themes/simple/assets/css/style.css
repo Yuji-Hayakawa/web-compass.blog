@@ -312,6 +312,13 @@ template {
 }
 
 /* ==========================================================================
+   Page Container
+   ========================================================================== */
+.PageContainer {
+  background-color: #C7C7C7;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .PageFooter {
@@ -456,8 +463,10 @@ template {
    Main
    ========================================================================== */
 .PageContent {
-  background-color: #C7C7C7;
-  padding: 40px 80px 100px 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px;
+  padding: 40px 40px 100px 40px;
 }
 .PageContent > .inner {
   display: flex;
@@ -473,9 +482,9 @@ template {
    Sidebar
    ========================================================================== */
 .Sidebar {
-  margin-left: 8%;
+  margin-left: 5%;
   margin-top: 40px;
-  width: 28%;
+  width: 31%;
 }
 
 /* ==========================================================================
@@ -497,14 +506,18 @@ template {
   line-height: 2;
   padding-bottom: 8px;
 }
+._NotfoundPage ._ArticlePart__title {
+  text-align: left;
+}
 
 /* ==========================================================================
    Button
    ========================================================================== */
 .c-button {
-  background-color: #f00;
+  background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  color: #fff;
+  color: #333;
   cursor: pointer;
   display: inline-block;
   font-size: 1.8rem;
@@ -576,6 +589,30 @@ template {
   font-size: 1.2rem;
 }
 
+.c-lv1HeadingSingle {
+  font-size: 2.4rem;
+}
+
+.c-lv2HeadingSingle {
+  background: #f7f7f7;
+  border-left: 8px solid #4865b2;
+  font-size: 2.3rem;
+  padding: 16px;
+}
+
+.c-lv3HeadingSingle {
+  border-left: 8px solid #4865b2;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.c-lv4HeadingSingle {
+  border-left: 8px solid #4865b2;
+  font-size: 1.8rem;
+  padding-left: 15px;
+}
+
 /* ==========================================================================
    Element Reset
    ========================================================================== */
@@ -593,7 +630,7 @@ a:visited {
 }
 
 p {
-  font-size: 16;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -647,6 +684,7 @@ figure {
    Page navi
    ========================================================================== */
 .wp-pagenavi {
+  margin-bottom: 70px;
   margin-top: 70px;
   max-width: 786px;
 }
@@ -766,6 +804,7 @@ figure {
    ========================================================================== */
 .Profile {
   background-color: #fff;
+  border-radius: 10px;
   margin-top: 80px;
   padding: 4px 4px 20px;
 }
@@ -797,7 +836,7 @@ figure {
   padding: 0 15px;
 }
 .Profile .Profile__detail {
-  margin-top: 20px;
+  padding: 10px 20px;
   text-align: right;
 }
 .Profile .Profile__detail a {
@@ -806,6 +845,39 @@ figure {
 }
 .Profile .Profile__detail a:hover {
   text-decoration: underline;
+}
+.Profile.-author {
+  background-color: transparent;
+  padding: 0;
+}
+.Profile.-author .ProfileBox {
+  border: 1px solid #C7C7C7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 10px;
+}
+.Profile.-author .ProfileBox__author {
+  text-align: center;
+  width: 140px;
+}
+.Profile.-author .ProfileBox__author img {
+  background-color: #C7C7C7;
+  border-radius: 50%;
+}
+.Profile.-author .ProfileBox__author .Profile__author {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.Profile.-author .ProfileBox__text {
+  border-left: 1px solid #C7C7C7;
+  margin: 0;
+  padding-left: 10px;
+  width: calc(100% - 150px);
+}
+.Profile.-author .ProfileBox__text .Profile__text {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -818,12 +890,14 @@ figure {
   position: relative;
 }
 .Search .SearchForm__input {
+  border-radius: 10px;
   font-size: 2rem;
   padding: 10px 0 10px 10px;
   width: 94%;
 }
 .Search .SearchForm__submit {
   background-color: #2C3036;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
   display: inline-block;
   height: 100%;
@@ -837,7 +911,7 @@ figure {
    Menu
    ========================================================================== */
 ._Menu {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 ._Menu ._Menu__list {
   display: flex;
@@ -845,9 +919,10 @@ figure {
 }
 ._Menu ._Menu__list > li {
   background-color: #2C3036;
-  margin: 0 20px 20px 0;
+  border-radius: 10px;
+  margin: 0 25px 25px 0;
   text-align: center;
-  width: calc((100% - 20px) / 2);
+  width: calc((100% - 25px) / 2);
 }
 ._Menu ._Menu__list > li:hover {
   opacity: 0.6;
@@ -875,8 +950,9 @@ figure {
    ========================================================================== */
 .Category {
   background-color: #fff;
+  border-radius: 10px;
   margin-top: 80px;
-  padding: 4px 4px 20px;
+  padding: 4px 25px 20px;
 }
 .Category .Category__title {
   font-size: 2rem;
@@ -904,8 +980,9 @@ figure {
    ========================================================================== */
 .Archive {
   background-color: #fff;
+  border-radius: 10px;
   margin-top: 80px;
-  padding: 4px 4px 20px;
+  padding: 4px 25px 20px;
 }
 .Archive .Archive__title {
   font-size: 2rem;
@@ -933,6 +1010,7 @@ figure {
    ========================================================================== */
 .Breadcrumb {
   font-size: 1.3rem;
+  padding: 10px 0;
 }
 .Breadcrumb > .inner > span {
   margin-right: 5px;
@@ -964,8 +1042,73 @@ figure {
 ._ShareBtn__list ._ShareBtn__item a {
   color: #FFF;
 }
-._ShareBtn__list ._ShareBtn__item a i {
-  padding-right: 5px;
+
+/* ==========================================================================
+   Article Content
+   ========================================================================== */
+.ArticleContent {
+  background-color: #fff;
+  padding: 30px;
+}
+.ArticleContentHeader__times {
+  color: #464444;
+  font-size: 1.2rem;
+}
+.ArticleContentBody p {
+  font-size: 1.6rm;
+  line-height: 1.8;
+}
+
+/* ==========================================================================
+   Related Article
+   ========================================================================== */
+._RelatedArticle {
+  margin-top: 80px;
+}
+._RelatedArticle__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+._RelatedArticle__list ._RelatedArticle__item {
+  margin: 0 30px 40px;
+}
+._RelatedArticle__list ._RelatedArticle__item > a {
+  display: flex;
+  flex-direction: column-reverse;
+}
+._RelatedArticle__list ._RelatedArticle__item > a ._RelatedArticle__title {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+._RelatedArticle__list ._RelatedArticle__item > a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Notfound page
+   ========================================================================== */
+._NotfoundPage {
+  text-align: center;
+}
+._NotfoundPage__title {
+  font-size: 2.4rem;
+  line-height: 2;
+}
+._NotfoundPage > .Search {
+  margin: 40px 0;
+}
+._NotfoundPage .Category {
+  margin-top: 30px;
+}
+._NotfoundPage__return {
+  margin-top: 40px;
+  padding: 0;
+}
+._NotfoundPage__return > a {
+  display: block;
+  padding: 20px 10px;
 }
 
 /* ==========================================================================

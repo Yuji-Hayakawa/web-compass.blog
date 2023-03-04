@@ -4,6 +4,7 @@
 
 @use "foundation/_reset";
 
+@use "layout/_pageContainer";
 @use "layout/_footer";
 @use "layout/_header";
 @use "layout/_main";
@@ -26,6 +27,9 @@
 @use "object/project/_archive";
 @use "object/project/_breadcrumb";
 @use "object/project/_shareBtn";
+@use "object/project/_articleContent";
+@use "object/project/_relatedArticle";
+@use "object/project/_notFound";
 
 @use "object/utility/_hover";
 @use "object/utility/_space";
