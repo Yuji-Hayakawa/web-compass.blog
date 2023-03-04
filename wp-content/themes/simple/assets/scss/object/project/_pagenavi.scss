@@ -21,16 +21,17 @@
   }
 
   a {
-    font-size: 1.4rem;
-    text-decoration: none;
-    padding: 16px 18px;
-    color: #fff;
-    background-color: #BCBCBC;
     margin-left: 14px;
+    padding: 16px 18px;
+    background-color: var.$paginationBackground;
+    color: #000;
+    font-size: 1.4rem;
     font-weight: bold;
+    text-decoration: none;
 
     &:hover {
-      background-color: var.$paginationBackgroundCurrent;
+      background-color: #838383;
+      color: #fff;
     }
   }
 }

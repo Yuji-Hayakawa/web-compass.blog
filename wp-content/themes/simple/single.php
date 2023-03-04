@@ -37,11 +37,13 @@
                       <div class="Profile__authorImg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="100" height="100" loading="lazy" decoding="async">
                       </div>
-                      <p class="Profile__author">はや氏</p>
+                      <p class="Profile__author">はやかわ</p>
                     </div>
                     <div class="ProfileBox__text">
-                      <p class="Profile__text">WordPressが得意なWeb屋。HPcode代表。300件以上のWordPress案件を対応してきました。SE → 農家 → アフィリエイター → Web屋。生まれは三重県。<br>
-                      ホームページ制作を承っております。お気軽にお問い合わせください！</p>
+                      <p class="Profile__text">WordPressが得意なWebサイト制作マン。</p>
+                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法政大学 ▶︎ IT企業でフロントエンドエンジニア ▶︎ ホームページ制作者</p>
+                      <p class="Profile__text">現在は中小企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。<br>
+                      ホームページ制作を承っておりますので、お気軽にご相談ください！</p>
                     </div>
                   <!-- /.ProfileBox -->
                   </div>
