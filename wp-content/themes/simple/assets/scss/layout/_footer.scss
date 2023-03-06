@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../setting/variable" as var;
+@use "../mixin/mq" as mq;
 
 .PageFooter {
   $_block: '.PageFooter';
@@ -30,12 +31,6 @@
         color: var.$footerColor;
       }
     }
-
-    .FooterInformation__message {
-      color: var.$footerColor;
-      font-size: 1.2rem;
-      text-align: center;
-    }
   }
 
   .FooterBottom {
@@ -60,6 +55,10 @@
         color: #BCB8B8;
         font-size: 1.4rem;
         line-height: 2;
+
+        > a:hover {
+          opacity: var.$opacity;
+        }
       }
     }
 
@@ -139,6 +138,46 @@
 
       > a {
         color: var.$footerColor;
+      }
+    }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .PageFooter {
+    $_block: '.PageFooter';
+    padding-top: 40px;
+
+    .FooterBottom {
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 40px;
+
+      .FooterBottom__description {
+        width: 100%;
+        max-width: 727px;
+      }
+
+      .FooterBottom__category {
+        width: 100%;
+        max-width: 727px;
+      }
+
+      .FooterBottom__contact {
+        width: 100%;
+        max-width: 727px;
+
+        .FooterBottom__contactButton {
+          max-width: 600px;
+          margin: 30px auto 0;
+
+          > a:active {
+            opacity: var.$opacity;
+          }
+        }
       }
     }
   }

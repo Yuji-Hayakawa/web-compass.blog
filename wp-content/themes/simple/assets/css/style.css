@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Reset
    ========================================================================== */
@@ -341,11 +342,6 @@ template {
 .PageFooter .FooterInformation .FooterInformation__logo > a {
   color: #fff;
 }
-.PageFooter .FooterInformation .FooterInformation__message {
-  color: #fff;
-  font-size: 1.2rem;
-  text-align: center;
-}
 .PageFooter .FooterBottom {
   display: flex;
   gap: 56px;
@@ -367,6 +363,9 @@ template {
   color: #BCB8B8;
   font-size: 1.4rem;
   line-height: 2;
+}
+.PageFooter .FooterBottom .FooterBottom__description p > a:hover {
+  opacity: 0.6;
 }
 .PageFooter .FooterBottom .FooterBottom__category {
   max-width: 332px;
@@ -432,6 +431,37 @@ template {
   color: #fff;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .PageFooter {
+    padding-top: 40px;
+  }
+  .PageFooter .FooterBottom {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .PageFooter .FooterBottom .FooterBottom__description {
+    max-width: 727px;
+    width: 100%;
+  }
+  .PageFooter .FooterBottom .FooterBottom__category {
+    max-width: 727px;
+    width: 100%;
+  }
+  .PageFooter .FooterBottom .FooterBottom__contact {
+    max-width: 727px;
+    width: 100%;
+  }
+  .PageFooter .FooterBottom .FooterBottom__contact .FooterBottom__contactButton {
+    margin: 30px auto 0;
+    max-width: 600px;
+  }
+  .PageFooter .FooterBottom .FooterBottom__contact .FooterBottom__contactButton > a:active {
+    opacity: 0.6;
+  }
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -459,12 +489,23 @@ template {
   margin: 0;
   text-align: center;
 }
-@media screen and (max-width: 1119px) {
+
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .PageHeader {
+    padding-top: 15px;
+  }
+  .PageHeader .HeaderPageId {
+    font-size: 2.6rem;
+    margin: 0;
+  }
   .PageHeader .PageHeader__catchcopy {
-    margin-top: 70px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-top: 8px;
   }
 }
-
 /* ==========================================================================
    Main
    ========================================================================== */
@@ -484,6 +525,20 @@ template {
   width: 64%;
 }
 
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .MainContent {
+    width: 100%;
+  }
+}
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .PageContent {
+    padding: 30px 15px 50px;
+  }
+}
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -493,6 +548,14 @@ template {
   width: 31%;
 }
 
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .Sidebar {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 /* ==========================================================================
    _Article Part
    ========================================================================== */
@@ -501,6 +564,13 @@ template {
   margin-top: 40px;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  ._ArticlePart {
+    margin-bottom: 40px;
+  }
+}
 /* ==========================================================================
    Article Part Title
    ========================================================================== */
@@ -516,6 +586,15 @@ template {
   text-align: left;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  ._ArticlePart__title {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    padding-bottom: 0;
+  }
+}
 /* ==========================================================================
    Button
    ========================================================================== */
@@ -682,10 +761,30 @@ figure {
 }
 .HeaderGlobalNav .HeaderGlobalNav__list > li > a > i {
   display: block;
-  font-size: 24px;
+  font-size: 2.4rem;
   padding-bottom: 8px;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .HeaderGlobalNav .HeaderGlobalNav__list {
+    font-size: 1.1rem;
+    padding: 12px 0;
+  }
+  .HeaderGlobalNav .HeaderGlobalNav__list > li:first-of-type {
+    border-left: none;
+  }
+  .HeaderGlobalNav .HeaderGlobalNav__list > li:last-of-type {
+    border-right: none;
+  }
+  .HeaderGlobalNav .HeaderGlobalNav__list > li:active {
+    background-color: #686868;
+  }
+  .HeaderGlobalNav .HeaderGlobalNav__list > li > a > i {
+    font-size: 1.9rem;
+  }
+}
 /* ==========================================================================
    Page navi
    ========================================================================== */
@@ -716,6 +815,15 @@ figure {
   color: #fff;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .wp-pagenavi {
+    margin-bottom: 30px;
+    max-width: 737px;
+    text-align: center;
+  }
+}
 /* ==========================================================================
    Key Visual
    ========================================================================== */
@@ -741,19 +849,20 @@ figure {
 ._PickupPost a ._PickupPost__meta ._PickupPost__title {
   color: #333;
   font-size: 2.4rem;
-  margin: 10px 0 0;
+  margin: 0;
 }
 ._PickupPost a ._PickupPost__meta ._PickupPost__description {
   color: #4A4A4A;
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.6;
+  margin: 20px 0;
 }
 ._PickupPost a ._PickupPost__meta ._PickupPost__button {
   border: 1px solid #7B7B7B;
   border-radius: 24px;
   color: #7B7B7B;
   font-size: 1.4rem;
-  margin: 10px 20px 0;
+  margin: 0 20px;
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: center;
@@ -767,9 +876,43 @@ figure {
   width: 55%;
 }
 ._PickupPost a ._PickupPost__thumbnail img {
+  border-radius: 10px 0 0 10px;
   width: 100%;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  ._PickupPost {
+    min-width: 290px;
+  }
+  ._PickupPost a {
+    flex-direction: column;
+  }
+  ._PickupPost a ._PickupPost__meta {
+    line-height: 1.4;
+    margin: 0;
+    padding: 20px 0;
+    width: 90%;
+  }
+  ._PickupPost a ._PickupPost__meta ._PickupPost__title {
+    font-size: 1.8rem;
+  }
+  ._PickupPost a ._PickupPost__meta ._PickupPost__button {
+    margin: 0;
+  }
+  ._PickupPost a ._PickupPost__meta ._PickupPost__button:active {
+    -webkit-text-decoration: underline solid #7B7B7B 2px;
+    text-decoration: underline solid #7B7B7B 2px;
+  }
+  ._PickupPost a ._PickupPost__thumbnail {
+    width: 100%;
+  }
+  ._PickupPost a ._PickupPost__thumbnail img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+  }
+}
 /* ==========================================================================
    Article
    ========================================================================== */
@@ -797,7 +940,7 @@ figure {
   line-height: 2;
   margin: 0;
 }
-._ArticleItem ._ArticleItem__meta p {
+._ArticleItem ._ArticleItem__meta > p {
   color: #4A4A4A;
   font-size: 1.4rem;
   line-height: 1.7;
@@ -805,7 +948,37 @@ figure {
 ._ArticleItem ._ArticleItem__thumbnail {
   order: 1;
 }
+._ArticleItem ._ArticleItem__thumbnail > img {
+  max-width: 200px;
+}
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  ._ArticleItem:not(:first-child) {
+    margin-top: 30px;
+  }
+  ._ArticleItem > a {
+    flex-direction: column;
+  }
+  ._ArticleItem ._ArticleItem__meta {
+    margin: 15px 20px;
+  }
+  ._ArticleItem ._ArticleItem__meta ._ArticleItem__title {
+    line-height: 1.4;
+  }
+  ._ArticleItem ._ArticleItem__meta > p {
+    line-height: 1.6;
+  }
+  ._ArticleItem ._ArticleItem__thumbnail {
+    width: 100%;
+  }
+  ._ArticleItem ._ArticleItem__thumbnail > img {
+    border-radius: 10px 10px 0 0;
+    max-width: 737px;
+    width: 100%;
+  }
+}
 /* ==========================================================================
    Profile
    ========================================================================== */
@@ -823,7 +996,7 @@ figure {
 }
 .Profile .Profile__img .Profile__author {
   font-size: 2rem;
-  margin: 20px 0 0;
+  margin: 12px 0 0;
 }
 .Profile .Profile__img img {
   background-color: #C7C7C7;
@@ -843,12 +1016,12 @@ figure {
   padding: 0 15px;
 }
 .Profile .Profile__detail {
-  padding: 10px 20px;
+  padding: 6px 10px;
   text-align: right;
 }
 .Profile .Profile__detail a {
-  font-size: 1.6rem;
-  line-height: 1.8;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 .Profile .Profile__detail a:hover {
   text-decoration: underline;
@@ -887,6 +1060,28 @@ figure {
   margin: 0;
 }
 
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .Profile .Profile__detail {
+    text-align: center;
+  }
+}
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .Profile {
+    margin-top: 30px;
+  }
+  .Profile .Profile__detail {
+    padding: 6px;
+    text-align: right;
+  }
+  .Profile .Profile__detail > a {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+}
 /* ==========================================================================
    Searchform
    ========================================================================== */
@@ -956,6 +1151,13 @@ figure {
   margin-bottom: 10px;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  ._Menu {
+    margin-top: 40px;
+  }
+}
 /* ==========================================================================
    Category
    ========================================================================== */
@@ -986,6 +1188,13 @@ figure {
   text-decoration: underline;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .Category {
+    margin-top: 40px;
+  }
+}
 /* ==========================================================================
    Archive
    ========================================================================== */
@@ -1016,6 +1225,13 @@ figure {
   text-decoration: underline;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .Archive {
+    margin-top: 40px;
+  }
+}
 /* ==========================================================================
    Article
    ========================================================================== */
@@ -1225,20 +1441,26 @@ figure {
    Hidden
    ========================================================================== */
 /* PC
-   ========================================================================== */
-.u-hidden-pc {
-  display: none;
+  ========================================================================== */
+@media screen and (min-width: 1120px) {
+  .u-hidden-pc {
+    display: none;
+  }
 }
 
 /* Tablet
   ========================================================================== */
-.u-hidden-tab {
-  display: none;
+@media screen and (max-width: 1119px) {
+  .u-hidden-tab {
+    display: none;
+  }
 }
 
 /* SP
   ========================================================================== */
-.u-hidden-sp {
-  display: none;
+@media screen and (max-width: 767px) {
+  .u-hidden-sp {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

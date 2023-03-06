@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../../setting/variable" as var;
+@use "../../mixin/mq" as mq;
 
 ._ArticlePart__title {
   $_block: '._ArticlePart__title';
@@ -15,5 +16,17 @@
 
   ._NotfoundPage & {
     text-align: left;
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  ._ArticlePart__title {
+    $_block: '._ArticlePart__title';
+    padding-bottom: 0;
+    font-size: 2.2rem;
+    line-height: 1.6;
   }
 }

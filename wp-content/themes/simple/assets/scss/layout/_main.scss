@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../setting/variable" as var;
+@use "../mixin/mq" as mq;
 
 .PageContent {
   $_block: '.PageContent';
@@ -21,4 +22,22 @@
 
 .MainContent {
   width: 64%;
+}
+
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .MainContent {
+    width: 100%;
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .PageContent {
+    $_block: '.PageContent';
+    padding: 30px 15px 50px;
+  }
 }

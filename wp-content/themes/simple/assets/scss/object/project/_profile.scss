@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../../setting/variable" as var;
+@use "../../mixin/mq" as mq;
 
 .Profile {
   $_block: '.Profile';
@@ -11,14 +12,14 @@
   padding: 4px 4px 20px;
   border-radius: 10px;
 
-  .Profile__img {
+  #{$_block}__img {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 20px;
 
-    .Profile__author {
-      margin: 20px 0 0;
+    #{$_block}__author {
+      margin: 12px 0 0;
       font-size: 2rem;
     }
 
@@ -28,7 +29,7 @@
     }
   }
 
-  .Profile__job {
+  #{$_block}__job {
     text-align: center;
     margin: 5px 0 0;
     color: #4A4A4A;
@@ -36,20 +37,20 @@
     line-height: 1;
   }
 
-  .Profile__text {
+  #{$_block}__text {
     margin: 25px 0 0;
     padding: 0 15px;
     font-size: 1.4rem;
     line-height: 1.7;
   }
 
-  .Profile__detail {
+  #{$_block}__detail {
     text-align: right;
-    padding: 10px 20px;
+    padding: 6px 10px;
 
     a {
-      font-size: 1.6rem;
-      line-height: 1.8;
+      font-size: 1.5rem;
+      line-height: 1.5;
 
       &:hover {
         text-decoration: underline;
@@ -93,6 +94,40 @@
         #{$_block}__text {
           margin: 0;
         }
+      }
+    }
+  }
+}
+
+
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .Profile {
+    $_block: '.Profile';
+
+    .Profile__detail {
+      text-align: center;
+    }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .Profile {
+    $_block: '.Profile';
+    margin-top: 30px;
+
+
+    #{$_block}__detail {
+      padding: 6px;
+      text-align: right;
+
+      > a {
+        font-size: 1.4rem;
+        line-height: 1.4;
       }
     }
   }

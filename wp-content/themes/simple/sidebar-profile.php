@@ -6,7 +6,7 @@
     </div>
   </div>
   <p class="Profile__job">Webコーダー</p>
-  <p class="Profile__text">WordPressが得意なWebサイト制作マン。<br>
+  <p class="Profile__text">WordPressが得意なWebサイト制作者。<br>
   新卒でWebマーケ会社にフロントエンドエンジニアとして就職。<br>
   現在は中小企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。</p>
   <p class="Profile__text">【経歴】野球少年 ▶︎ 法政大学 ▶︎ IT企業でフロントエンドエンジニア ▶︎ ホームページ制作者</p>

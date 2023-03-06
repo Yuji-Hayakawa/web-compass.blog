@@ -34,8 +34,26 @@
   .PageHeader__catchcopy {
     margin: 0;
     text-align: center;
-    @include mq.mq('tab') {
-      margin-top: 70px;
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .PageHeader {
+    $_block: '.PageHeader';
+    padding-top: 15px;
+
+    .HeaderPageId {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+
+    #{$_block}__catchcopy {
+      margin-top: 8px;
+      font-size: 1.2rem;
+      line-height: 1.3;
     }
   }
 }

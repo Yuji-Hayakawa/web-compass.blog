@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../../setting/variable" as var;
+@use "../../mixin/mq" as mq;
 
 // NOTE: WordPressプラグイン「WP-PageNavi」に上書きするスタイル
 .wp-pagenavi {
@@ -33,5 +34,17 @@
       background-color: #838383;
       color: #fff;
     }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .wp-pagenavi {
+    $_block: '.wp-pagenavi';
+    text-align: center;
+    max-width: 737px;
+    margin-bottom: 30px;
   }
 }

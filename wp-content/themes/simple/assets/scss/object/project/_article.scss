@@ -2,6 +2,8 @@
    Article
    ========================================================================== */
 
+@use "../../mixin/mq" as mq;
+
 ._ArticleItem {
   $_block: '._ArticleItem';
   background-color: #fff;
@@ -31,7 +33,7 @@
       margin: 0;
     }
 
-    p {
+    > p {
       color: #4A4A4A;
       font-size: 1.4rem;
       line-height: 1.7;
@@ -40,5 +42,47 @@
 
   ._ArticleItem__thumbnail {
     order: 1;
+
+    > img {
+      max-width: 200px;
+    }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  ._ArticleItem {
+    $_block: '._ArticleItem';
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+
+    > a {
+      flex-direction: column;
+    }
+
+  #{$_block}__meta {
+    margin: 15px 20px;
+
+    #{$_block}__title {
+      line-height: 1.4;
+    }
+
+    > p {
+      line-height: 1.6;
+    }
+  }
+  #{$_block}__thumbnail {
+    width: 100%;
+
+    > img {
+      width: 100%;
+      max-width: 737px;
+      border-radius: 10px 10px 0 0;
+    }
+  }
   }
 }

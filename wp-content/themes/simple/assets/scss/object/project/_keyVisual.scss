@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../../setting/variable" as var;
+@use "../../mixin/mq" as mq;
 
 ._PickupPost {
   $_block: '._PickupPost';
@@ -19,29 +20,30 @@
     align-items: center;
     justify-content: space-between;
 
-    ._PickupPost__meta {
+    #{$_block}__meta {
       order: 2;
       line-height: 1.6;
       width: 45%;
       margin: 0 24px;
 
-      ._PickupPost__title {
-        margin: 10px 0 0;
+      #{$_block}__title {
+        margin: 0;
         color: #333;
         font-size: 2.4rem;
       }
 
-      ._PickupPost__description {
+      #{$_block}__description {
+        margin: 20px 0;
         font-size: 1.4rem;
-        line-height: 1.8;
+        line-height: 1.6;
         color: #4A4A4A;
       }
 
-      ._PickupPost__button {
+      #{$_block}__button {
         font-size: 1.4rem;
         color: #7B7B7B;
         text-align: center;
-        margin: 10px 20px 0;
+        margin: 0 20px;
         padding-top: 8px;
         padding-bottom: 8px;
         border: 1px solid #7B7B7B;
@@ -53,12 +55,55 @@
       }
     }
 
-    ._PickupPost__thumbnail {
+    #{$_block}__thumbnail {
       order: 1;
       width: 55%;
 
       img {
         width: 100%;
+        border-radius: 10px 0 0 10px;
+      }
+    }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  ._PickupPost {
+    $_block: '._PickupPost';
+    min-width: 290px;
+
+    a {
+      flex-direction: column;
+
+      #{$_block}__meta {
+        width: 90%;
+        margin: 0;
+        padding: 20px 0;
+        line-height: 1.4;
+
+        #{$_block}__title {
+          font-size: 1.8rem;
+        }
+
+        #{$_block}__button {
+          margin: 0;
+
+          &:active {
+            text-decoration: underline solid #7B7B7B 2px;
+          }
+        }
+      }
+
+      #{$_block}__thumbnail {
+        width: 100%;
+
+        img {
+          height: 200px;
+          border-radius: 10px 10px 0 0;
+        }
       }
     }
   }

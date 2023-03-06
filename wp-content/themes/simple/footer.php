@@ -4,13 +4,14 @@
             <p class="FooterInformation__logo">
               <a href="/">webコンパス</a>
             </p>
-            <p class="FooterInformation__message">文学部出身の「現役コーダー」がWeb制作に役立つ情報をわかりやすく解説！</p>
           </div>
           <div class="FooterBottom">
             <div class="FooterBottom__description">
               <h4>webコンパスについて</h4>
-              <p>文学部出身でIT音痴だった僕が、Webサイト制作を学ぶ中でつまずいたポイントを中心にわかりやすく解説しています。</p>
-              <p>現役コーダーによるWebサイト制作に関する情報を発信しています。</p>
+              <p>Webサイト制作に役立つ情報を発信しています。</p>
+              <p>文学部出身でIT音痴だった僕が、Webサイト制作を学ぶ中でつまずいたポイントを丁寧に解説しています。</p>
+              <p>WordPressを活用した管理しやすいホームページ制作、運用サポートを行っております。<br>
+              <a href="/contact/">お仕事のご相談はこちら ></a></p>
             </div>
             <div class="FooterBottom__category">
               <h4>Category</h4>
@@ -18,7 +19,6 @@
                 <li><a href="/category/wordpress/">WordPress</a></li>
                 <li><a href="/category/html/">HTML</a></li>
                 <li><a href="/category/css/">CSS</a></li>
-                <li><a href="/category/javascript/">JavaScript</a></li>
               </ul>
             </div>
             <div class="FooterBottom__contact">
