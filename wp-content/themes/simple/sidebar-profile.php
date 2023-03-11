@@ -4,7 +4,7 @@
     <div class="Profile__authorImg">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" decoding="async">
     </div>
-  </div>
+  </div>こ
   <p class="Profile__job">Webコーダー</p>
   <p class="Profile__text">WordPressが得意なWebサイト制作者。<br>
   新卒でWebマーケ会社にフロントエンドエンジニアとして就職。<br>
