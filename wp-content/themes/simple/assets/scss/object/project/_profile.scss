@@ -12,6 +12,10 @@
   padding: 4px 4px 20px;
   border-radius: 10px;
 
+  &.-contact {
+    margin-top: 20px;
+  }
+
   #{$_block}__img {
     display: flex;
     flex-direction: column-reverse;

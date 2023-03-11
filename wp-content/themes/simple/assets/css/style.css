@@ -988,6 +988,9 @@ figure {
   margin-top: 80px;
   padding: 4px 4px 20px;
 }
+.Profile.-contact {
+  margin-top: 20px;
+}
 .Profile .Profile__img {
   align-items: center;
   display: flex;
