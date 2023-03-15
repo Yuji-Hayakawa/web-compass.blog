@@ -22,7 +22,7 @@
               <!-- /.ArticleContentBody -->
               </div>
               <footer class="ArticleContentFooter">
-                
+                <?php get_template_part( 'sns' ); ?>
                 <section class="Profile -author">
                   <h3 class="c-lv3HeadingSingle">この記事を書いた人</h3>
                   <div class="ProfileBox">
