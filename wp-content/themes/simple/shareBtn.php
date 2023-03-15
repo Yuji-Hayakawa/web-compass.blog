@@ -1,13 +1,8 @@
-<section class="Archive" id="archive">
-  <h4 class="Archive__title">Archive</h4>
-  <ul class="Archive__list">
-    <?php
-      $args = array(
-        'type' => 'monthly',
-        'show_post_count' => true,
-      );
-      wp_get_archives( $args );
-    ?>
-  </ul>
-<!-- /.Archive -->
-</section>
+<div class="_ShareBtn">
+                  <ul class="_ShareBtn__list">
+                    <li class="_ShareBtn__item c-button -line"><a href=""><i class="fa-brands fa-line"></i> LINE</a></li>
+                    <li class="_ShareBtn__item c-button -twitter"><a href="" target="_blank"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
+                    <li class="_ShareBtn__item c-button -feedly"><a href="" target="_blank"><i class="fa-solid fa-rss"></i> Feedly</a></li>
+                  </ul>
+                <!-- /._ShareBtn -->
+                </div>
