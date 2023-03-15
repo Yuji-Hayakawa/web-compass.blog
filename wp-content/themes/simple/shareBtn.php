@@ -7,3 +7,5 @@
 <!-- /._ShareBtn -->
 </div>
 
+<div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://web-compass.blog/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
