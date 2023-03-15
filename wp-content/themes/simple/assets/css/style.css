@@ -1269,7 +1269,7 @@ figure {
 ._ShareBtn__list ._ShareBtn__item.-feedly {
   background-color: #8b8d90;
 }
-._ShareBtn__list ._ShareBtn__item a {
+._ShareBtn__list ._ShareBtn__item > div {
   color: #FFF;
 }
 
