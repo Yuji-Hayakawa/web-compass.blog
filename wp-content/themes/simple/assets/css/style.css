@@ -1260,6 +1260,9 @@ figure {
   gap: 10px;
   justify-content: center;
 }
+._ShareBtn__list ._ShareBtn__item {
+  color: #FFF;
+}
 ._ShareBtn__list ._ShareBtn__item.-line {
   background-color: #48B826;
 }
