@@ -5,7 +5,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" decoding="async">
     </div>
   </div>
-  <p class="Profile__job">Webコーダー</p>
+  <p class="Profile__job">ホームページ制作者</p>
   <p class="Profile__text">WordPressが得意なWebサイト制作者。<br>
   新卒でWebマーケ会社にフロントエンドエンジニアとして就職。<br>
   現在は小規模企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。</p>
