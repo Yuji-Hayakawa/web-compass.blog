@@ -7,5 +7,5 @@
 <!-- /._ShareBtn -->
 </div>
 
-<div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+<div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="<?php the_permalink(); ?>" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
 <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
