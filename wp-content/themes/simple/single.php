@@ -38,8 +38,8 @@
                       <p class="Profile__text">現在は小規模企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。<br>
                       ホームページ制作を承っておりますので、お気軽にご相談ください！</p>
                       <div class="Profile__detail">
-    <a href="/contact/">お問い合わせはこちら ></a>
-  </div>
+                        <a href="/contact/">お問い合わせはこちら ></a>
+                      </div>
                     </div>
                   <!-- /.ProfileBox -->
                   </div>
