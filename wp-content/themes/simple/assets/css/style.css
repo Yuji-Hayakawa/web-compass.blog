@@ -1269,7 +1269,7 @@ figure {
 ._ShareBtn__list ._ShareBtn__item.-twitter {
   background-color: #1D9CF0;
 }
-._ShareBtn__list ._ShareBtn__item.-twitter > a {
+._ShareBtn__list ._ShareBtn__item.-twitter > .twitter-share-button {
   background-color: #1D9CF0;
 }
 ._ShareBtn__list ._ShareBtn__item.-feedly {
