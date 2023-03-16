@@ -34,7 +34,7 @@
                     </div>
                     <div class="ProfileBox__text">
                       <p class="Profile__text">WordPressが得意なホームページ制作者。</p>
-                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法政大学 ▶︎ 新卒でフロントエンドエンジニア ▶︎ ホームページ制作者</p>
+                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法政大学 ▶︎ 新卒でエンジニア ▶︎ ホームページ制作者</p>
                       <p class="Profile__text">現在は小規模企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。<br>
                       ホームページ制作を承っておりますので、お気軽にご相談ください！</p>
                     </div>
