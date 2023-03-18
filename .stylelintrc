@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "double",
+    "number-leading-zero": "never",
+    "declaration-block-trailing-semicolon": "never",
+    "declaration-colon-space-before": "never",
+    "declaration-colon-space-after": "always",
+    "block-no-empty": true,
+    "no-duplicate-selectors": null
+  }
+}
