@@ -31,9 +31,9 @@ const compileSass = (done) => {
       grid: "autoplace",
       cascade: false,
     }),
-    // プロパティを並べ替える(アルファベット順)
+    // プロパティを並べ替える(SMACSSルールの順番)
     cssdeclsort({
-      order: 'alphabetical'
+      order: 'smacss'
     })
   ];
 
