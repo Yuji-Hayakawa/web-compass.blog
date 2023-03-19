@@ -1,12 +1,17 @@
 {
   "rules": {
     "indentation": 2,
-    "string-quotes": "double",
-    "number-leading-zero": "never",
-    "declaration-block-trailing-semicolon": "never",
-    "declaration-colon-space-before": "never",
-    "declaration-colon-space-after": "always",
     "block-no-empty": true,
-    "no-duplicate-selectors": null
+    "no-duplicate-selectors": null,
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true,
+    "function-calc-no-unspaced-operator": true,
+    "number-no-trailing-zeros": true,
+    "length-zero-no-unit": true,
+    "declaration-bang-space-after": "never",
+    "declaration-bang-space-before": "always",
+    "declaration-block-no-duplicate-properties": true,
+    "selector-type-case": "lower",    "selector-pseudo-element-colon-notation": "double",
+    "unit-no-unknown": true
   }
 }
