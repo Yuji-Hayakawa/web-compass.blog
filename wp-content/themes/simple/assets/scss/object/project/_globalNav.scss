@@ -19,7 +19,7 @@
     font-size: 1.4rem;
 
     > li {
-      max-width: 150px;
+      max-width: 154px;
       width: calc( 100% / 6 );
       border-right: 1px solid #fff;
       text-align: center;
@@ -54,16 +54,19 @@
     $_block: '.HeaderGlobalNav';
 
     #{$_block}__list {
-      padding: 12px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 12px 4px;
       font-size: 1.1rem;
 
       > li {
+        width: 100%;
+        max-width: 253px;
+        margin: 6px 0;
+        border-right: none;
+
         &:first-of-type {
           border-left: none;
-        }
-
-        &:last-of-type {
-          border-right: none;
         }
 
         &:active {
@@ -72,7 +75,7 @@
 
         > a {
           > i {
-            font-size: 1.9rem;
+            font-size: 1.6rem;
           }
         }
       }

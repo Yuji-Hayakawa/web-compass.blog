@@ -3,9 +3,9 @@
     <div class="inner">
       <?php if ( is_home() && !is_paged() ): ?>
         <article class="_PickupPost" id="pickup-post">
-          <a href="/">
+          <a href="/homepage-start/">
             <div class="_PickupPost__meta">
-              <h3 class="_PickupPost__title">プログラミング始め方完全ガイド！立ち上げから収入を得る方法まで</h3>
+              <h3 class="_PickupPost__title">ホームページ作り方完全ガイド！立ち上げから収入を得る方法まで</h3>
               <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
               <p class="_PickupPost__button"><span>この記事を読む</span></p>
             </div>
@@ -33,7 +33,6 @@
                 <a href="<?php the_permalink(); ?>">
                   <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                    <?php the_excerpt(); ?>
                   </div>
                   <div class="_ArticleItem__thumbnail">
                     <?php if ( has_post_thumbnail() ): ?>
@@ -65,7 +64,6 @@
                 <a href="<?php the_permalink(); ?>">
                   <div class="_ArticleItem__meta">
                     <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                    <?php the_excerpt(); ?>
                   </div>
                   <div class="_ArticleItem__thumbnail">
                     <?php if ( has_post_thumbnail() ): ?>

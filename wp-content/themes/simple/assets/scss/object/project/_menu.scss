@@ -5,11 +5,11 @@
 @use "../../setting/variable" as var;
 @use "../../mixin/mq" as mq;
 
-._Menu {
+.Menu {
   $_block: '._Menu';
-  margin-top: 80px;
+  margin-top: 44px;
 
-  ._Menu__list {
+  .Menu__list {
     display: flex;
     flex-wrap: wrap;
 
@@ -51,7 +51,7 @@
 /* SP
 ========================================================================== */
 @include mq.mq('sp') {
-  ._Menu {
+  .Menu {
     $_block: '._Menu';
     margin-top: 40px;
   }

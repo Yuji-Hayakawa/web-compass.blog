@@ -1,5 +1,5 @@
 <section class="Archive" id="archive">
-  <h4 class="Archive__title">Archive</h4>
+  <h4 class="Archive__title">アーカイブ</h4>
   <ul class="Archive__list">
     <?php
       $args = array(

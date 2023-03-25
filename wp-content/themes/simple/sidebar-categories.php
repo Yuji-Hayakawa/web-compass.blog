@@ -1,5 +1,5 @@
 <section class="Category" id="category">
-  <h4 class="Category__title">Category</h4>
+  <h4 class="Category__title">カテゴリー</h4>
   <ul class="Category__list">
     <?php
       $args = array(

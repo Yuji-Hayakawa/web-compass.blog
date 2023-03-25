@@ -2,20 +2,8 @@
    _Article Part
    ========================================================================== */
 
-@use "../mixin/mq" as mq;
-
 ._ArticlePart {
   $_block: '._ArticlePart';
   margin-top: 40px;
-  margin-bottom: 70px;
-}
-
-
-/* SP
-========================================================================== */
-@include mq.mq('sp') {
-  ._ArticlePart {
-    $_block: '._ArticlePart';
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
 }

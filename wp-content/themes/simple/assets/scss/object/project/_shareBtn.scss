@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "../../setting/variable" as var;
+@use "../../mixin/mq" as mq;
 
 ._ShareBtn {
   $_block: '._ShareBtn';
@@ -17,24 +18,44 @@
       color: #FFF;
 
       &.-line {
-        background-color: #48B826;
+        background-color: #00b900;
+        width: 100%;
+        padding: 0;
       }
 
       &.-twitter {
-        background-color: #1D9CF0;
-
-        > .twitter-share-button {
-          background-color: #1D9CF0;
-        }
+        background-color: #1da1f2;
+        width: 100%;
+        padding: 0;
       }
 
       &.-feedly {
         background-color: #8b8d90;
+        width: 100%;
+        padding: 0;
       }
 
       & > a {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        padding: 20px 42px;
         color: #FFF;
       }
+    }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  ._ShareBtn {
+    $_block: '._ShareBtn';
+
+    &__list {
+      flex-wrap: wrap;
+      gap: 20px;
     }
   }
 }

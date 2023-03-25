@@ -8,32 +8,33 @@
           <div class="FooterBottom">
             <div class="FooterBottom__description">
               <h4>webコンパスについて</h4>
-              <p>Webサイト制作に役立つ情報を発信しています。</p>
-              <p>文学部出身でIT音痴だった僕が、Webサイト制作を学ぶ中でつまずいたポイントを丁寧に解説しています。</p>
-              <p>WordPressを活用した管理しやすいホームページ制作、運用サポートを行っております。<br>
+              <p>文学部出身でパソコン音痴だった僕が、新卒でWebエンジニアとして就職し、独立するまでの過程でつまずいたポイントや、ホームページ制作に役立つ情報を発信しています。</p>
+              <p>現在は小規模企業・個人事業主さまのホームページ制作と運用・集客サポートを行なっています。管理・更新しやすいホームページ作りが得意です。<br>
               <a href="/contact/">お仕事のご相談はこちら ></a></p>
             </div>
             <div class="FooterBottom__category">
-              <h4>Category</h4>
+              <h4>カテゴリー</h4>
               <ul class="FooterBottom__categoryList">
                 <li><a href="/category/wordpress/">WordPress</a></li>
                 <li><a href="/category/html/">HTML</a></li>
                 <li><a href="/category/css/">CSS</a></li>
+                <li><a href="/category/work/">Work</a></li>
+                <li><a href="/category/books/">Books</a></li>
               </ul>
             </div>
             <div class="FooterBottom__contact">
-              <h4>Contact</h4>
+              <h4>お問い合わせ</h4>
               <div class="FooterBottom__contactButton">
-                <a href="/contact/" class="Button">ご相談・お問い合わせはこちら</a>
+                <a href="/contact/" class="Button"><i class="fa fa-envelope"></i> ご相談・お問い合わせはこちら</a>
               </div>
               <div class="FooterBottom__contactButton">
-                <a href="/profile/" class="Button">運営者情報はこちら</a>
+                <a href="/profile/" class="Button"><i class="fa-sharp fa-solid fa-face-smile"></i> 運営者情報はこちら</a>
               </div>
             </div>
           <!-- /.FooterBottom -->
           </div>
           <p class="FooterCopyright">
-            <small>Copyright - <a href="/">webコンパス</a> 2023</small>
+            <small>© 2023<a href="/"> webコンパス</a></small>
           </p>
         </div>
       <!-- /.PageFooter -->
