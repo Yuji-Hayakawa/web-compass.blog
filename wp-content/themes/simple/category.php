@@ -35,7 +35,6 @@
         <?php get_sidebar( 'menu' ); ?>
         <?php get_sidebar( 'profile' ); ?>
         <?php get_sidebar( 'categories' ); ?>
-        <?php get_sidebar( 'archives' ); ?>
       <!-- /.Sidebar -->
       </aside>
     </div>

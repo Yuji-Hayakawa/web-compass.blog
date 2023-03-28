@@ -30,15 +30,15 @@
                       <div class="Profile__authorImg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="100" height="100" loading="lazy" decoding="async">
                       </div>
-                      <p class="Profile__author">はやかわ</p>
+                      <p class="Profile__author">早川ゆうじ</p>
                     </div>
                     <div class="ProfileBox__text">
                       <p class="Profile__text">WordPressが得意なホームページ制作者。</p>
-                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法政大学 ▶︎ 新卒でITエンジニア ▶︎ ホームページ制作者</p>
+                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法大文学部 ▶︎ 新卒Webエンジニア ▶︎ 独立 ▶︎ ホームページ制作者</p>
                       <p class="Profile__text">現在は小規模企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。<br>
-                      ホームページ制作を承っておりますので、お気軽にご相談ください！</p>
+                      パソコン操作に苦手意識がある方でも、サイトの管理・更新ができるホームページを作るのが得意。</p>
                       <div class="Profile__detail">
-                        <a href="/contact/">お問い合わせはこちら ></a>
+                        <a href="/contact/">記事に関してのお問い合わせはこちら ></a>
                       </div>
                     </div>
                   <!-- /.ProfileBox -->
