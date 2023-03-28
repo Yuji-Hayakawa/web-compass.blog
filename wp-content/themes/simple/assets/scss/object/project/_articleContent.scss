@@ -8,6 +8,26 @@
   background-color: #fff;
   padding: 30px;
 
+  > h2 {
+    font-size: 2.3rem;
+    background: #f7f7f7;
+    border-left: 8px solid #4865b2;
+    padding: 16px;
+  }
+
+  > h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    border-left: 8px solid #4865b2;
+    padding: 0 15px;
+  }
+
+  > h4 {
+    font-size: 1.8rem;
+    border-left: 8px solid #4865b2;
+    padding-left: 15px;
+  }
+
   &Header__times {
     color: #464444;
     font-size: 1.2rem;

@@ -20,6 +20,7 @@
                 <li><a href="/category/css/">CSS</a></li>
                 <li><a href="/category/work/">Work</a></li>
                 <li><a href="/category/books/">Books</a></li>
+                <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
               </ul>
             </div>
             <div class="FooterBottom__contact">
