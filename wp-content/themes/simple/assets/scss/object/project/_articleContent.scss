@@ -2,6 +2,7 @@
    Article Content
    ========================================================================== */
 
+@use "../../mixin/mq" as mq;
 
 .ArticleContent {
   $_block: '.ArticleContent';
@@ -33,10 +34,66 @@
     font-size: 1.2rem;
   }
 
-  &Body {
-    p {
-      font-size: 1.6rm;
-      line-height: 1.8;
+  & #{$_block}Body {
+    margin-top: 30px;
+
+    > h2 {
+      font-size: 2.3rem;
+      background: #f7f7f7;
+      border-left: 8px solid #4865b2;
+      padding: 16px;
     }
+
+    > h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      border-left: 8px solid #4865b2;
+      padding: 0 15px;
+    }
+
+    > h4 {
+      font-size: 1.8rem;
+      border-left: 8px solid #4865b2;
+      padding-left: 15px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
+
+    .ez-toc-title-container {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: disc;
+
+      li {
+        font-size: 1.6rem;
+        line-height: 2;
+        letter-spacing: 0.03em;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .wp-element-caption {
+      text-align: center;
+    }
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .ArticleContent {
+    $_block: '.ArticleContent';
+    padding: 10px;
   }
 }

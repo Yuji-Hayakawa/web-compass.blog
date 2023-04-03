@@ -2,10 +2,11 @@
    Sidebar
    ========================================================================== */
 
+@use "../mixin/mq" as mq;
+
 .Sidebar {
   $_block: '.Sidebar';
   width: 31%;
-  margin-top: 40px;
   margin-left: 5%;
 }
 
@@ -16,5 +17,15 @@
   .Sidebar {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+
+/* SP
+========================================================================== */
+@include mq.mq('sp') {
+  .Sidebar {
+    $_block: '.Sidebar';
+    margin-top: 30px;
   }
 }

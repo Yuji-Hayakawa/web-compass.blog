@@ -15,12 +15,10 @@
             <div class="FooterBottom__category">
               <h4>カテゴリー</h4>
               <ul class="FooterBottom__categoryList">
-                <li><a href="/category/wordpress/">WordPress</a></li>
-                <li><a href="/category/html/">HTML</a></li>
-                <li><a href="/category/css/">CSS</a></li>
-                <li><a href="/category/work/">Work</a></li>
-                <li><a href="/category/books/">Books</a></li>
-                <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+                <li><a href="/category/wordpress/">WordPress活用</a></li>
+                <li><a href="/engineer-shushoku/">Webエンジニア就職</a></li>
+                <li><a href="/category/programming/">プログラミング</a></li>
+                <li><a href="/category/books/">おすすめ本</a></li>
               </ul>
             </div>
             <div class="FooterBottom__contact">

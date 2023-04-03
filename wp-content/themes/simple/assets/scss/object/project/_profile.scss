@@ -8,12 +8,12 @@
 .Profile {
   $_block: '.Profile';
   background-color: var.$colorBackground;
-  margin-top: 19px;
+  margin-top: 40px;
   padding: 4px 4px 20px;
   border-radius: 10px;
 
   &.-contact {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   #{$_block}__img {
@@ -132,6 +132,22 @@
       > a {
         font-size: 1.4rem;
         line-height: 1.4;
+      }
+    }
+
+    &.-author {
+      #{$_block}Box {
+        flex-direction: column;
+
+        &__author {
+          width: 100%;
+          }
+
+        &__text {
+          width: 100%;
+          padding-left: 0;
+          border-left: none;
+        }
       }
     }
   }

@@ -536,7 +536,7 @@ template {
 ========================================================================== */
 @media screen and (max-width: 767px) {
   .PageContent {
-    padding: 30px 15px 50px;
+    padding: 30px 8px 50px;
   }
 }
 /* ==========================================================================
@@ -544,7 +544,6 @@ template {
    ========================================================================== */
 .Sidebar {
   width: 31%;
-  margin-top: 40px;
   margin-left: 5%;
 }
 
@@ -554,6 +553,13 @@ template {
   .Sidebar {
     width: 100%;
     margin-left: 0;
+  }
+}
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .Sidebar {
+    margin-top: 30px;
   }
 }
 /* ==========================================================================
@@ -976,13 +982,13 @@ figure {
    Profile
    ========================================================================== */
 .Profile {
-  margin-top: 19px;
+  margin-top: 40px;
   padding: 4px 4px 20px;
   border-radius: 10px;
   background-color: #fff;
 }
 .Profile.-contact {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .Profile .Profile__img {
   display: flex;
@@ -1077,12 +1083,23 @@ figure {
     font-size: 1.4rem;
     line-height: 1.4;
   }
+  .Profile.-author .ProfileBox {
+    flex-direction: column;
+  }
+  .Profile.-author .ProfileBox__author {
+    width: 100%;
+  }
+  .Profile.-author .ProfileBox__text {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+  }
 }
 /* ==========================================================================
    Searchform
    ========================================================================== */
 .Search {
-  margin: 0;
+  margin: 40px 0 0;
 }
 .Search .SearchForm {
   position: relative;
@@ -1109,6 +1126,13 @@ figure {
   font-size: 20px;
 }
 
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .Search {
+    margin: 0;
+  }
+}
 /* ==========================================================================
    Menu
    ========================================================================== */
@@ -1158,7 +1182,7 @@ figure {
    Category
    ========================================================================== */
 .Category {
-  margin-top: 44px;
+  margin-top: 40px;
   padding: 4px 25px 20px;
   border-radius: 10px;
   background-color: #fff;
@@ -1188,7 +1212,7 @@ figure {
 ========================================================================== */
 @media screen and (max-width: 767px) {
   .Category {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 /* ==========================================================================
@@ -1225,7 +1249,7 @@ figure {
 ========================================================================== */
 @media screen and (max-width: 767px) {
   .Archive {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 /* ==========================================================================
@@ -1315,35 +1339,68 @@ figure {
   color: #464444;
   font-size: 1.2rem;
 }
-.ArticleContentBody p {
-  font-size: 1.6rm;
+.ArticleContent .ArticleContentBody {
+  margin-top: 30px;
+}
+.ArticleContent .ArticleContentBody > h2 {
+  padding: 16px;
+  border-left: 8px solid #4865b2;
+  background: #f7f7f7;
+  font-size: 2.3rem;
+}
+.ArticleContent .ArticleContentBody > h3 {
+  padding: 0 15px;
+  border-left: 8px solid #4865b2;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.ArticleContent .ArticleContentBody > h4 {
+  padding-left: 15px;
+  border-left: 8px solid #4865b2;
+  font-size: 1.8rem;
+}
+.ArticleContent .ArticleContentBody p {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
   line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+.ArticleContent .ArticleContentBody .ez-toc-title-container {
+  text-align: center;
+}
+.ArticleContent .ArticleContentBody ul {
+  list-style-type: disc;
+}
+.ArticleContent .ArticleContentBody ul li {
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+.ArticleContent .ArticleContentBody ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.ArticleContent .ArticleContentBody .wp-element-caption {
+  text-align: center;
 }
 
+/* SP
+========================================================================== */
+@media screen and (max-width: 767px) {
+  .ArticleContent {
+    padding: 10px;
+  }
+}
 /* ==========================================================================
    Related Article
    ========================================================================== */
 ._RelatedArticle {
   margin-top: 80px;
 }
-._RelatedArticle__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+._RelatedArticle__list a {
+  font-size: 1.6rem;
+  line-height: 3;
 }
-._RelatedArticle__list ._RelatedArticle__item {
-  margin: 0 30px 40px;
-}
-._RelatedArticle__list ._RelatedArticle__item > a {
-  display: flex;
-  flex-direction: column-reverse;
-}
-._RelatedArticle__list ._RelatedArticle__item > a ._RelatedArticle__title {
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: 0;
-}
-._RelatedArticle__list ._RelatedArticle__item > a:hover {
+._RelatedArticle__list a:hover {
   text-decoration: underline;
 }
 

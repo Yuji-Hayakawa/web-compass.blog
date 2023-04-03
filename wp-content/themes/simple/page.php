@@ -2,12 +2,12 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
-        <?php get_template_part( 'breadcrumb' ); ?>
         <article class="ArticleContent">
           <h1 class="c-lv1HeadingSingle"><?php the_title(); ?></h1>
           <?php the_content(); ?>
         <!-- /.ArticleContent -->
         </article>
+        <?php get_template_part( 'breadcrumb' ); ?>
       <!-- /.MainContent -->
       </main>
       <aside class="Sidebar" id="sidebar">

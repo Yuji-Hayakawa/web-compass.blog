@@ -1,9 +1,12 @@
 /* ==========================================================================
    Searchform
    ========================================================================== */
+
+@use "../../mixin/mq" as mq;
+
 .Search {
   $_block: '.Search';
-  margin: 0;
+  margin: 40px 0 0;
 
   .SearchForm {
     position: relative;
@@ -31,5 +34,15 @@
       color: #fff;
       font-size: 20px;
     }
+  }
+}
+
+
+/* Responsive (768pxから960pxまでのレイアウト調整)
+========================================================================== */
+@media screen and (max-width: 960px) {
+  .Search {
+    $_block: '.Search';
+    margin: 0;
   }
 }

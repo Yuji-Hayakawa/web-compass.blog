@@ -2,13 +2,13 @@
   <div class="PageContent" id="page-content">
     <div class="inner">
       <main class="MainContent" id="main-content">
-        <?php get_template_part( 'breadcrumb' ); ?>
         <?php if ( have_posts() ): ?>
           <?php while ( have_posts() ): the_post(); ?>
             <article <?php post_class( 'ArticleContent' ); ?> >
               <header class="ArticleContentHeader">
                 <div class="ArticleContentHeader__title">
                   <h1 class="c-lv1HeadingSingle"><?php the_title(); ?></h1>
+                  <i class="fa-solid fa-arrows-rotate"></i>
                   <time datetime="<?php the_time( 'Y-m-d' ); ?>" class="ArticleContentHeader__times"><?php the_time( 'Y年m月d日' ); ?></time>
                 </div>
               <!-- /.ArticleContentHeader -->
@@ -30,15 +30,14 @@
                       <div class="Profile__authorImg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="100" height="100" loading="lazy" decoding="async">
                       </div>
-                      <p class="Profile__author">早川ゆうじ</p>
+                      <p class="Profile__author">はや氏ゆう</p>
                     </div>
                     <div class="ProfileBox__text">
                       <p class="Profile__text">WordPressが得意なホームページ制作者。</p>
-                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法大文学部 ▶︎ 新卒Webエンジニア ▶︎ 独立 ▶︎ ホームページ制作者</p>
-                      <p class="Profile__text">現在は小規模企業・個人事業主さんのホームページ制作と運用・集客サポートをメインにお仕事しています。<br>
-                      パソコン操作に苦手意識がある方でも、サイトの管理・更新ができるホームページを作るのが得意。</p>
+                      <p class="Profile__text">【経歴】野球少年 ▶︎ 法大文学部 ▶︎ IT企業でWebエンジニア ▶︎ 2023年独立 ▶︎ ホームページ制作者</p>
+                      <p class="Profile__text">● パソコン操作に苦手意識がある方でも、サイトの管理・更新ができるホームページを作るのが得意。</p>
                       <div class="Profile__detail">
-                        <a href="/contact/">記事に関してのお問い合わせはこちら ></a>
+                        <a href="/profile/">プロフィール詳細はこちら ></a>
                       </div>
                     </div>
                   <!-- /.ProfileBox -->
@@ -54,7 +53,7 @@
                 ?>
                 <?php $args = array(
                   'post_type' => 'post',
-                  'posts_per_page' => '4',
+                  'posts_per_page' => '5',
                   'post__not_in' =>array( $post->ID ),
                   'category__in' => $category,
                   'orderby' => 'rand'
@@ -62,23 +61,20 @@
                 $related_query = new WP_Query( $args );?>
                 <section class="_RelatedArticle">
                   <h3 class="c-lv3HeadingSingle">こちらの関連記事もどうぞ</h3>
+                  <?php if ( $related_query->have_posts() ): ?>
+                  <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>
                   <ul class="_RelatedArticle__list">
-                    <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>
                     <li class="_RelatedArticle__item">
-                      <a href="<?php the_permalink(); ?>">
-                        <p class="_RelatedArticle__title"><?php the_title(); ?></p>
-                        <div class="_RelatedArticle__thumbnail">
-                          <?php if ( has_post_thumbnail() ): ?>
-                            <?php the_post_thumbnail( 'medium' ) ?>
-                          <?php else: ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="300" height="300" loading="lazy" decoding="async">
-                          <?php endif; ?>
-                        </div>
-                      </a>
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </li>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
                   </ul>
+                  <?php endwhile; ?>
+                  <?php wp_reset_postdata(); ?>
+                  <?php else: ?>
+                    <p>関連記事はありませんでした。<br>
+                    以下のカテゴリーから記事を探すことができます。</p>
+                    <?php get_sidebar( 'categories' ); ?>
+                  <?php endif; ?>
                 <!-- /._RelatedArticle -->
                 </section>
               <!-- /.ArticleContentFooter -->
@@ -87,6 +83,7 @@
             </article>
           <?php endwhile; ?>
         <?php endif; ?>
+        <?php get_template_part( 'breadcrumb' ); ?>
       <!-- /.MainContent -->
       </main>
       <aside class="Sidebar" id="sidebar">
