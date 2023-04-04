@@ -3,10 +3,10 @@
     <div class="inner">
       <?php if ( is_home() && !is_paged() ): ?>
         <article class="_PickupPost" id="pickup-post">
-          <a href="/homepage-start/">
+          <a href="/engineer-shushoku/">
             <div class="_PickupPost__meta">
-              <h3 class="_PickupPost__title">ホームページ作り方完全ガイド！立ち上げから収入を得る方法まで</h3>
-              <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
+              <h3 class="_PickupPost__title">文学部のためのWebエンジニア就職完全ガイド！プログラミング独学から内定獲得まで</h3>
+              <p class="_PickupPost__description">文学部の大学3年生向けに、プログラミング未経験でもエンジニア就職可能な理由や、プログラミングの始め方からエンジニアとして内定を獲得するために必要な就活のポイントを解説しました。全て実体験です。</p>
               <p class="_PickupPost__button"><span>この記事を読む</span></p>
             </div>
             <div class="_PickupPost__thumbnail">

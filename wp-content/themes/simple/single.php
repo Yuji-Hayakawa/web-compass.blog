@@ -86,7 +86,7 @@
         <?php get_template_part( 'breadcrumb' ); ?>
       <!-- /.MainContent -->
       </main>
-      <aside class="Sidebar" id="sidebar">
+      <aside class="Sidebar -single" id="sidebar">
         <?php get_search_form(); ?>
         <?php get_sidebar( 'profile' ); ?>
         <?php get_sidebar( 'categories' ); ?>

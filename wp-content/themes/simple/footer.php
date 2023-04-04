@@ -8,9 +8,9 @@
           <div class="FooterBottom">
             <div class="FooterBottom__description">
               <h4>webコンパスについて</h4>
-              <p>文学部出身でパソコン音痴だった僕が、新卒でWebエンジニアとして就職し、独立するまでの過程でつまずいたポイントや、ホームページ制作に役立つ情報を発信しています。</p>
-              <p>現在は小規模企業・個人事業主さまのホームページ制作と運用・集客サポートを行なっています。管理・更新しやすいホームページ作りが得意です。<br>
-              <a href="/contact/">お仕事のご相談はこちら ></a></p>
+              <p>文学部出身でパソコン音痴だった僕が、新卒でWebエンジニアとして就職し、独立する過程で学んだことを発信しています。</p>
+              <p>発信で一番大切にしていることは、【文学部所属の大学3年生】の視点に立つことです。パワポすらまともに使えなかった過去の僕に向けて作成しています。<br>
+              <a href="/profile/">webコンパスの想い ></a></p>
             </div>
             <div class="FooterBottom__category">
               <h4>カテゴリー</h4>
@@ -18,6 +18,7 @@
                 <li><a href="/category/wordpress/">WordPress活用</a></li>
                 <li><a href="/engineer-shushoku/">Webエンジニア就職</a></li>
                 <li><a href="/category/programming/">プログラミング</a></li>
+                <li><a href="/category/speed/">PC効率化</a></li>
                 <li><a href="/category/books/">おすすめ本</a></li>
               </ul>
             </div>

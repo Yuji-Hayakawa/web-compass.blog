@@ -7,7 +7,12 @@
 .Sidebar {
   $_block: '.Sidebar';
   width: 31%;
+  margin-top: 40px;
   margin-left: 5%;
+
+  &.-single {
+    margin-top: 0;
+  }
 }
 
 
