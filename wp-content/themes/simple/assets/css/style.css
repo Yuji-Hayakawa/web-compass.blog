@@ -911,9 +911,13 @@ figure {
   }
   ._PickupPost a ._PickupPost__thumbnail {
     width: 100%;
+    text-align: center;
   }
   ._PickupPost a ._PickupPost__thumbnail img {
+    -o-object-fit: cover;
+    width: 260px;
     height: 200px;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
   }
 }
@@ -946,14 +950,16 @@ figure {
 }
 ._ArticleItem ._ArticleItem__thumbnail {
   order: 1;
+  height: 150px;
 }
 ._ArticleItem ._ArticleItem__thumbnail > img {
   max-width: 200px;
+  border-radius: 10px 0 0 10px;
 }
 
-/* SP
+/* SP（480pxまでのレイアウト調整）
 ========================================================================== */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   ._ArticleItem:not(:first-child) {
     margin-top: 30px;
   }
@@ -971,10 +977,11 @@ figure {
   }
   ._ArticleItem ._ArticleItem__thumbnail {
     width: 100%;
+    text-align: center;
   }
   ._ArticleItem ._ArticleItem__thumbnail > img {
     width: 100%;
-    max-width: 737px;
+    max-width: 767px;
     border-radius: 10px 10px 0 0;
   }
 }

@@ -9,9 +9,9 @@
               <p class="_PickupPost__description">初心者向けにブログで収入が得られる理由やブログの始め方から始めた後のブログ運営のポイント、ブログで収入を得るために必要な定番広告サービスの紹介までまとめて解説。</p>
               <p class="_PickupPost__button"><span>この記事を読む</span></p>
             </div>
-            <figure class="_PickupPost__thumbnail">
+            <div class="_PickupPost__thumbnail">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="320" decoding="async">
-            </figure>
+            </div>
           </a>
         <!-- /._PickupPost -->
         </article>
@@ -69,7 +69,7 @@
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail('medium') ?>
                     <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="737" height="150" decoding="async">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="320" height="150" decoding="async">
                     <?php endif; ?>
                   </div>
                 </a>

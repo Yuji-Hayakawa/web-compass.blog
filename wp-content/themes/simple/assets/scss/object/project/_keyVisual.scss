@@ -99,8 +99,11 @@
 
       #{$_block}__thumbnail {
         width: 100%;
+        text-align: center;
 
         img {
+          object-fit: cover;
+          width: 260px;
           height: 200px;
           border-radius: 10px 10px 0 0;
         }
