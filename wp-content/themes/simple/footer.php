@@ -15,10 +15,9 @@
             <div class="FooterBottom__category">
               <h4>カテゴリー</h4>
               <ul class="FooterBottom__categoryList">
-                <li><a href="/category/wordpress/">WordPress活用</a></li>
                 <li><a href="/engineer-shushoku/">Webエンジニア就職</a></li>
                 <li><a href="/category/programming/">プログラミング</a></li>
-                <li><a href="/category/speed/">効率化</a></li>
+                <li><a href="/category/wordpress/">WordPress活用</a></li>
                 <li><a href="/category/books/">おすすめ本</a></li>
               </ul>
             </div>
