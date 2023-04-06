@@ -4,6 +4,12 @@
 
 ._ArticlePart {
   $_block: '._ArticlePart';
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &._Popular,
+  &._New {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }

@@ -62,14 +62,48 @@
       font-size: 1.6rem;
       line-height: 1.8;
       letter-spacing: 0.03em;
+
+      &.-check {
+        font-size: 2rem;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 6px;
+          border-left: 5px solid #4865b2;
+          border-bottom: 5px solid #4865b2;
+          transform: rotate(315deg);
+          vertical-align: super;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    // 目次
+    div#ez-toc-container {
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      ul {
+        border: none;
+
+        li {
+          margin: 10px;
+        }
+      }
     }
 
     .ez-toc-title-container {
       text-align: center;
     }
 
+    // 枠線でグループ化
     ul {
       list-style-type: disc;
+      background-color: #f8f9ff;
+      border: solid 1px #4865b2;
+      padding: 30px;
 
       li {
         font-size: 1.6rem;
@@ -82,8 +116,29 @@
       }
     }
 
+    ol {
+      background-color: #f8f9ff;
+      border: solid 1px #4865b2;
+      padding: 30px;
+
+      li {
+        font-size: 1.6rem;
+        line-height: 2;
+        letter-spacing: 0.03em;
+      }
+    }
+
     .wp-element-caption {
       text-align: center;
+    }
+
+    .fa-tag {
+      padding-right: 4px;
+      font-size: 1.4rem;
+
+      +a {
+        font-size: 1.4rem;
+      }
     }
   }
 }

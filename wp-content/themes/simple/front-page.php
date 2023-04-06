@@ -23,7 +23,7 @@
           <?php
             $args = array(
               'post_type' => 'post',
-              'post__in' => array(34,36,38),
+              'post__in' => array(96),
             );
             $set_query = new WP_Query( $args );
           ?>
@@ -83,7 +83,7 @@
         <?php if( function_exists( 'wp_pagenavi' )) { wp_pagenavi(); } ?>
       <!-- /.MainContent -->
       </main>
-      <aside class="Sidebar" id="sidebar">
+      <aside class="Sidebar -front" id="sidebar">
         <?php get_search_form(); ?>
         <?php get_sidebar( 'menu' ); ?>
         <?php get_sidebar( 'profile' ); ?>

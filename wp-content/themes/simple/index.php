@@ -14,7 +14,6 @@
                   <a href="<?php the_permalink(); ?>">
                     <div class="_ArticleItem__meta">
                       <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                      <?php the_excerpt(); ?>
                     </div>
                     <div class="_ArticleItem__thumbnail">
                       <?php if ( has_post_thumbnail() ): ?>

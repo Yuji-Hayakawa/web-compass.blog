@@ -8,8 +8,10 @@
               <header class="ArticleContentHeader">
                 <div class="ArticleContentHeader__title">
                   <h1 class="c-lv1HeadingSingle"><?php the_title(); ?></h1>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="<?php the_time( 'Y-m-d' ); ?>" class="ArticleContentHeader__times"><?php the_date( 'Y年m月d日' ); ?></time>
                   <i class="fa-solid fa-arrows-rotate"></i>
-                  <time datetime="<?php the_time( 'Y-m-d' ); ?>" class="ArticleContentHeader__times"><?php the_time( 'Y年m月d日' ); ?></time>
+                  <time datetime="<?php the_time( 'Y-m-d' ); ?>" class="ArticleContentHeader__times"><?php the_modified_date( 'Y年m月d日' ); ?></time>
                 </div>
               <!-- /.ArticleContentHeader -->
               </header>
@@ -35,7 +37,7 @@
                     <div class="ProfileBox__text">
                       <p class="Profile__text">WordPressが得意なホームページ制作者。</p>
                       <p class="Profile__text">【経歴】野球少年 ▶︎ 法大文学部 ▶︎ IT企業でWebエンジニア ▶︎ 2023年独立 ▶︎ ホームページ制作者</p>
-                      <p class="Profile__text">● パソコン操作に苦手意識がある方でも、サイトの管理・更新ができるホームページを作るのが得意。</p>
+                      <p class="Profile__text">●パソコン操作に苦手意識がある方でも、サイトの管理・更新ができるホームページを作るのが得意です。</p>
                       <div class="Profile__detail">
                         <a href="/profile/">プロフィール詳細はこちら ></a>
                       </div>
@@ -86,7 +88,7 @@
         <?php get_template_part( 'breadcrumb' ); ?>
       <!-- /.MainContent -->
       </main>
-      <aside class="Sidebar -single" id="sidebar">
+      <aside class="Sidebar" id="sidebar">
         <?php get_search_form(); ?>
         <?php get_sidebar( 'profile' ); ?>
         <?php get_sidebar( 'categories' ); ?>

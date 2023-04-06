@@ -466,7 +466,7 @@ template {
    Header
    ========================================================================== */
 .PageHeader {
-  padding-top: 20px;
+  padding-top: 30px;
   background-color: #fff;
 }
 .PageHeader > .inner {
@@ -477,7 +477,7 @@ template {
   padding-left: 20px;
 }
 .PageHeader .HeaderPageId {
-  margin: 10px 0;
+  margin: 16px 0;
   font-weight: bold;
   font-size: 3rem;
   text-align: center;
@@ -494,10 +494,10 @@ template {
 ========================================================================== */
 @media screen and (max-width: 767px) {
   .PageHeader {
-    padding-top: 15px;
+    padding-top: 26px;
   }
   .PageHeader .HeaderPageId {
-    margin: 0;
+    margin: 18px 0;
     font-size: 2.6rem;
   }
   .PageHeader .PageHeader__catchcopy {
@@ -544,11 +544,11 @@ template {
    ========================================================================== */
 .Sidebar {
   width: 31%;
-  margin-top: 40px;
+  margin-top: 0;
   margin-left: 5%;
 }
-.Sidebar.-single {
-  margin-top: 0;
+.Sidebar.-front {
+  margin-top: 40px;
 }
 
 /* Responsive (768pxから960pxまでのレイアウト調整)
@@ -570,6 +570,10 @@ template {
    _Article Part
    ========================================================================== */
 ._ArticlePart {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+._ArticlePart._Popular, ._ArticlePart._New {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -1366,10 +1370,37 @@ figure {
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
+.ArticleContent .ArticleContentBody p.-check {
+  font-size: 2rem;
+}
+.ArticleContent .ArticleContentBody p.-check::before {
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  margin-right: 8px;
+  transform: rotate(315deg);
+  border-bottom: 5px solid #4865b2;
+  border-left: 5px solid #4865b2;
+  content: "";
+  vertical-align: super;
+}
+.ArticleContent .ArticleContentBody div#ez-toc-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.ArticleContent .ArticleContentBody div#ez-toc-container ul {
+  border: none;
+}
+.ArticleContent .ArticleContentBody div#ez-toc-container ul li {
+  margin: 10px;
+}
 .ArticleContent .ArticleContentBody .ez-toc-title-container {
   text-align: center;
 }
 .ArticleContent .ArticleContentBody ul {
+  padding: 30px;
+  border: solid 1px #4865b2;
+  background-color: #f8f9ff;
   list-style-type: disc;
 }
 .ArticleContent .ArticleContentBody ul li {
@@ -1380,8 +1411,25 @@ figure {
 .ArticleContent .ArticleContentBody ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+.ArticleContent .ArticleContentBody ol {
+  padding: 30px;
+  border: solid 1px #4865b2;
+  background-color: #f8f9ff;
+}
+.ArticleContent .ArticleContentBody ol li {
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
 .ArticleContent .ArticleContentBody .wp-element-caption {
   text-align: center;
+}
+.ArticleContent .ArticleContentBody .fa-tag {
+  padding-right: 4px;
+  font-size: 1.4rem;
+}
+.ArticleContent .ArticleContentBody .fa-tag + a {
+  font-size: 1.4rem;
 }
 
 /* SP
@@ -1412,8 +1460,11 @@ figure {
   text-align: center;
 }
 ._NotfoundPage__title {
-  font-size: 2.4rem;
-  line-height: 2;
+  font-size: 2rem;
+  text-align: left;
+}
+._NotfoundPage__description {
+  text-align: left;
 }
 ._NotfoundPage > .Search {
   margin: 40px 0;

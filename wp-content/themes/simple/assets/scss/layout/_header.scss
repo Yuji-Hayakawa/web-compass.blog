@@ -8,8 +8,7 @@
 .PageHeader {
   $_block: '.PageHeader';
   background-color: var.$headerBackground;
-  padding-top: 20px;
-  // NOTE: ここまでLayout
+  padding-top: 30px;
 
   > .inner {
     max-width: calc( 100% - 40px );
@@ -17,12 +16,11 @@
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
-    // NOTE: ここまでLayout
   }
 
   .HeaderPageId {
     text-align: center;
-    margin: 10px 0;
+    margin: 16px 0;
     font-size: 3rem;
     font-weight: bold;
 
@@ -43,10 +41,10 @@
 @include mq.mq('sp') {
   .PageHeader {
     $_block: '.PageHeader';
-    padding-top: 15px;
+    padding-top: 26px;
 
     .HeaderPageId {
-      margin: 0;
+      margin: 18px 0;
       font-size: 2.6rem;
     }
 
