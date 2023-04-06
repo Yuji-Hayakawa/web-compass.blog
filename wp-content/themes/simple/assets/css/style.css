@@ -962,6 +962,7 @@ figure {
 }
 ._ArticleItem ._ArticleItem__thumbnail > img {
   max-width: 200px;
+  height: 150px;
   border-radius: 10px 0 0 10px;
 }
 
