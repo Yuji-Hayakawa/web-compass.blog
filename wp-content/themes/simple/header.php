@@ -7,7 +7,7 @@ WordPressオリジナルテーマ制作についてご相談などを受けつ�
 https://web-compass.blog/contact/
 -->
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
   <?php get_template_part( 'head' ); ?>
   <body class="Page">
     <?php wp_body_open(); ?>
