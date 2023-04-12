@@ -10,7 +10,7 @@
               <p class="_PickupPost__button"><span>この記事を読む</span></p>
             </div>
             <div class="_PickupPost__thumbnail">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.jpg" alt="" width="574" height="320" decoding="async">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/engineer-shukatu.webp" alt="" width="574" height="320" decoding="async">
             </div>
           </a>
         <!-- /._PickupPost -->
@@ -38,7 +38,7 @@
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail('medium') ?>
                     <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="737" height="150" decoding="async">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.webp" alt="" width="737" height="150" decoding="async">
                     <?php endif; ?>
                   </div>
                 </a>
@@ -69,7 +69,7 @@
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail('medium') ?>
                     <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.png" alt="" width="320" height="150" decoding="async">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.webp" alt="" width="320" height="150" decoding="async">
                     <?php endif; ?>
                   </div>
                 </a>
