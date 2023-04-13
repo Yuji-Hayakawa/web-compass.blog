@@ -20,33 +20,21 @@
       <main class="MainContent" id="main-content">
         <section class="_ArticlePart _Popular" id="popular">
           <h2 class="_ArticlePart__title">人気記事</h2>
-          <?php
-            $args = array(
-              'post_type' => 'post',
-              'post__in' => array(96),
-            );
-            $set_query = new WP_Query( $args );
-          ?>
-          <?php if ( $set_query -> have_posts() ): ?>
-            <?php while ( $set_query -> have_posts() ): $set_query -> the_post(); ?>
-              <article <?php post_class('_ArticleItem'); ?> >
-                <a href="<?php the_permalink(); ?>">
-                  <div class="_ArticleItem__meta">
-                    <h3 class="_ArticleItem__title"><?php the_title(); ?></h3>
-                  </div>
-                  <div class="_ArticleItem__thumbnail">
-                    <?php if ( has_post_thumbnail() ): ?>
-                      <?php the_post_thumbnail('medium') ?>
-                    <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.webp" alt="" width="737" height="150" decoding="async">
-                    <?php endif; ?>
-                  </div>
-                </a>
-              <!-- /._ArticleItem -->
-              </article>
-            <?php endwhile; ?>
-          <?php endif; ?>
-          <?php wp_reset_postdata(); ?>
+            <article class="_ArticleItem">
+              <a href="/homepage-start/">
+                <div class="_ArticleItem__meta">
+                  <h3 class="_ArticleItem__title">【小規模企業者向け】ホームページの作り方を徹底解説！</h3>
+                </div>
+                <div class="_ArticleItem__thumbnail">
+                  <?php if ( has_post_thumbnail() ): ?>
+                    <?php the_post_thumbnail('medium') ?>
+                  <?php else: ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.webp" alt="" width="737" height="150" decoding="async">
+                  <?php endif; ?>
+                </div>
+              </a>
+            <!-- /._ArticleItem -->
+            </article>
         <!-- /._ArticlePart -->
         </section>
         <section class="_ArticlePart _New" id="new">
