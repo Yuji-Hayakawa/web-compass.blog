@@ -32,7 +32,7 @@
                       <div class="Profile__authorImg">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="100" height="100" loading="lazy" decoding="async">
                       </div>
-                      <p class="Profile__author">はや氏ゆう</p>
+                      <p class="Profile__author">はやかわ</p>
                     </div>
                     <div class="ProfileBox__text">
                       <p class="Profile__text">WordPressが得意なホームページ制作者。</p>

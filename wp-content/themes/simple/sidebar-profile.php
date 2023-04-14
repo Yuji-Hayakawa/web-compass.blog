@@ -1,6 +1,6 @@
 <section class="Profile" id="profile">
   <div class="Profile__img">
-    <h4 class="Profile__author">はや氏ゆう</h4>
+    <h4 class="Profile__author">はやかわ</h4>
     <div class="Profile__authorImg">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg" alt="" width="120" height="120" decoding="async">
     </div>
