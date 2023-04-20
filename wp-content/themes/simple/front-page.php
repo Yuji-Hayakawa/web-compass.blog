@@ -26,11 +26,7 @@
                   <h3 class="_ArticleItem__title">【小規模企業者向け】ホームページの作り方を徹底解説！</h3>
                 </div>
                 <div class="_ArticleItem__thumbnail">
-                  <?php if ( has_post_thumbnail() ): ?>
-                    <?php the_post_thumbnail('medium') ?>
-                  <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.webp" alt="" width="737" height="150" decoding="async">
-                  <?php endif; ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-start.webp" alt="ホームページの作り方" width="737" height="150" decoding="async">
                 </div>
               </a>
             <!-- /._ArticleItem -->
