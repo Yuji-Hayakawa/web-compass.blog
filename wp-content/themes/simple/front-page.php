@@ -23,7 +23,7 @@
             <article class="_ArticleItem">
               <a href="/homepage-start/">
                 <div class="_ArticleItem__meta">
-                  <h3 class="_ArticleItem__title">【小規模企業者向け】ホームページの作り方を徹底解説！</h3>
+                  <h3 class="_ArticleItem__title">【小規模企業者向け】失敗しないホームページの作り方を徹底解説！</h3>
                 </div>
                 <div class="_ArticleItem__thumbnail">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-start.webp" alt="ホームページの作り方" width="737" height="150" decoding="async">
