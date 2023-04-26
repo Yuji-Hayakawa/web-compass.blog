@@ -1261,15 +1261,9 @@ figure {
 /* ==========================================================================
    Article
    ========================================================================== */
-.Breadcrumb {
+.aioseo-breadcrumbs {
   padding: 10px 0;
-  font-size: 1.3rem;
-}
-.Breadcrumb > .inner > span {
-  margin-right: 5px;
-}
-.Breadcrumb > .inner > span:not(:first-child) {
-  margin-left: 5px;
+  font-size: 1.4rem;
 }
 
 /* ==========================================================================

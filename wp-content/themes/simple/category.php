@@ -26,7 +26,7 @@
         <!-- /._ArticlePart -->
         </section>
         <?php if( function_exists( 'wp_pagenavi' )) { wp_pagenavi(); } ?>
-        <?php get_template_part( 'breadcrumb' ); ?>
+        <?php if( function_exists( 'aioseo_breadcrumbs' ) ) aioseo_breadcrumbs(); ?>
       <!-- /.MainContent -->
       </main>
       <aside class="Sidebar" id="sidebar">

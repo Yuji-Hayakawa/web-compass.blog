@@ -2,19 +2,9 @@
    Article
    ========================================================================== */
 
-// NOTE: WordPressプラグイン「Breadcrumb NavXT」に上書きするスタイル
-.Breadcrumb {
-  $_block: '.Breadcrumb';
+// NOTE: WordPressプラグイン「AIOSEO」に上書きするスタイル
+.aioseo-breadcrumbs {
+  $_block: '.aioseo-breadcrumbs';
   padding: 10px 0;
-  font-size: 1.3rem;
-
-  > .inner {
-    > span {
-    margin-right: 5px;
-
-      &:not(:first-child) {
-        margin-left: 5px;
-      }
-    }
-  }
+  font-size: 1.4rem;
 }
